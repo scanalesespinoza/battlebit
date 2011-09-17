@@ -1,0 +1,1610 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2008 - 2011 JoomlaShine.com. All rights reserved.
+* @license   GNU/GPL v2 http://www.gnu.org/licenses/gpl-2.0.html
+*/
+/* ============================== DEFAULT HTML ============================== */
+/* =============== DEFAULT HTML - GENERAL STYLES =============== */
+html, body {
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 75%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* =============== DEFAULT HTML - TEXT STYLES =============== */
+p, pre, blockquote, form, dl, ul, ol, fieldset, address {
+	margin: 0.35em 0 0.8em 0;
+	padding: 0;
+}
+fieldset {
+	padding: .5em;
+}
+small {
+	font-size: .85em;
+}
+sup {
+	font-size: .8em;
+	position: relative;
+	bottom: 0.3em;
+	vertical-align: baseline;
+}
+sup em {
+	color: red;
+}
+acronym, abbr {
+	border-bottom: 1px dashed;
+	letter-spacing: 1px;
+	cursor: help;
+}
+pre {
+	background: #FFFFD5;
+	font-family: "Courier New",Courier,monospace;
+	padding: 1em;
+	border-left: 5px solid #404040;
+}
+blockquote {
+	font-style: italic;
+	min-height: 45px;
+	color: #404040;
+	padding-left: 60px;
+	background: url(../images/icons/icon-text-blockquote.png) no-repeat top left;
+}
+/* =============== DEFAULT HTML - HEADING STYLES =============== */
+h1 {
+	font-size: 1.5em;
+	color: #000000;
+}
+h2 {
+	font-size: 1.4em;
+	color: #000000;
+}
+h3 {
+	font-size: 1.3em;
+	color: #CC3333;
+}
+h4 {
+	font-size: 1.2em;
+	color: #CC8033;
+}
+h5 {
+	font-size: 1.1em;
+	color: #333333;
+}
+h6 {
+	font-size: 1em;
+	font-weight: bold;
+	color: #333333;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	margin: 0.1em 0 0.5em;
+}
+/* =============== DEFAULT HTML - LINK STYLES =============== */
+a {
+	text-decoration: none;
+	outline: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+a img {
+	border: none;
+}
+/* =============== DEFAULT HTML - LIST STYLES =============== */
+ul li {
+	margin: 0.3em 0 0.3em 1.6em;
+	padding: 0;
+}
+ol li {
+	margin: 0.3em 0 0.3em 2em;
+	padding: 0;
+}
+/* =============== DEFAULT HTML - IMAGES STYLES =============== */
+img {
+	border: none;
+}
+/* ============================== LAYOUT ============================== */
+/* =============== LAYOUT - GENERAL LAYOUT =============== */
+.clearafter:after {
+	clear: both;
+	display: block;
+	content: ".";
+	height: 0;
+	visibility: hidden;
+}
+.clearbreak {
+	clear: both;
+}
+div.jsn-modulescontainer2 div.jsn-modulecontainer {
+	float: left;
+	width: 49.95%;
+}
+div.jsn-modulescontainer3 div.jsn-modulecontainer {
+	float: left;
+	width: 33.3%;
+}
+div.jsn-modulescontainer4 div.jsn-modulecontainer {
+	float: left;
+	width: 24.975%;
+}
+div.jsn-modulescontainer5 div.jsn-modulecontainer {
+	float: left;
+	width: 19.98%;
+}
+div.jsn-modulescontainer6 div.jsn-modulecontainer {
+	float: left;
+	width: 16.65%;
+}
+div.jsn-modulescontainer {
+	padding: 4px 0 10px 0;
+}
+div.jsn-modulescontainer div.jsn-modulecontainer_inner {
+	margin: 4px 6px;
+}
+div.jsn-modulescontainer2 #jsn-pos-user1,
+div.jsn-modulescontainer2 #jsn-pos-user2,
+div.jsn-modulescontainer2 #jsn-pos-user3,
+div.jsn-modulescontainer2 #jsn-pos-user4,
+div.jsn-modulescontainer2 #jsn-pos-user5,
+div.jsn-modulescontainer2 #jsn-pos-user6,
+div.jsn-modulescontainer2 #jsn-pos-user7 {
+	float: left;
+	width: 49.95%;
+}
+div.jsn-modulescontainer3 #jsn-pos-user5,
+div.jsn-modulescontainer3 #jsn-pos-user6,
+div.jsn-modulescontainer3 #jsn-pos-user7 {
+	float: left;
+	width: 33.3%;
+}
+#jsn-usermodules1 div.jsn-modulecontainer,
+#jsn-usermodules2 div.jsn-modulecontainer,
+#jsn-usermodules3 div.jsn-modulecontainer {
+	float: none;
+	width: auto;
+}
+/* =============== LAYOUT - OVERALL PAGE =============== */
+#jsn-master {
+	background: repeat-x fixed left top;
+}
+#jsn-page {
+	color: #666;
+	width: 960px;
+	margin: 0 auto;
+}
+/* ----- STICKLEFT / STICKRIGHT ----- */
+div[id*=jsn-pos-stick-] {
+	position: fixed;
+}
+div[id*=jsn-pos-stick-left] {
+	left: 0;
+}
+div[id*=jsn-pos-stick-right] {
+	right: 0;
+}
+#jsn-pos-stick-leftmiddle,
+#jsn-pos-stick-rightmiddle {
+	visibility: hidden;
+}
+#jsn-pos-stick-leftbottom,
+#jsn-pos-stick-rightbottom {
+	bottom: 0;
+}
+/* =============== LAYOUT - HEADER AREA =============== */
+#jsn-header {
+	position: relative;
+	overflow: hidden;
+}
+#jsn-logo a {
+	line-height: 100%;
+	display: inline-block;
+}
+#jsn-headerright {
+	position: absolute;
+	top: 23px;
+	right: 0;
+}
+#jsn-headerright #jsn-pos-top {
+	float: right;
+}
+#jsn-pos-top form {
+	margin: 8px 0;
+}
+#jsn-pos-top div.jsn-modulecontainer {
+	float: right;
+	margin-left: 10px;
+}
+/* =============== LAYOUT - MENU AREA =============== */
+#jsn-menu {
+	background-color: #fff;
+	margin-bottom: 10px;
+	position: relative;
+	z-index: 89;
+}
+#jsn-menu_inner {
+	border: 1px solid #DADADA;
+	padding: 7px 8px;
+}
+#jsn-pos-mainmenu {
+	float: left;
+}
+#jsn-pos-toolbar {
+	float: right;
+}
+#jsn-pos-toolbar div.jsn-modulecontainer {
+	float: right;
+	margin-left: 10px;
+}
+#jsn-pos-toolbar form {
+	margin: 0;
+}
+/* =============== LAYOUT - CONTENT TOP AREA =============== */
+#jsn-content-top {
+	color: #fff;
+	background: #fff;
+	margin-bottom: 10px;
+	padding: 8px;
+	border: 1px solid #DADADA;
+}
+#jsn-content-top h3.jsn-moduletitle {
+	color: #fff;
+	margin: 5px 0 0 0;
+}
+#jsn-content-top a {
+	color: #FFFF00;
+}
+#jsn-pos-promo-left_inner,
+#jsn-pos-promo-right_inner {
+	padding: 10px;
+}
+#jsn-pos-promo-left_inner div.jsn-modulecontainer,
+#jsn-pos-promo-right_inner div.jsn-modulecontainer {
+	padding-bottom: 5px;
+}
+/* =============== LAYOUT - CONTENT AREA =============== */
+#jsn-content,
+#jsn-maincontent,
+#jsn-maincontent_inner,
+#jsn-maincontent_inner1,
+#jsn-maincontent_inner2,
+#jsn-maincontent_inner3,
+#jsn-maincontent_inner4,
+#jsn-centercol,
+#jsn-pos-innerleft,
+#jsn-leftsidecontent {
+	position: relative;
+}
+#jsn-content {
+	margin-bottom: 10px;
+	overflow: hidden;
+	z-index: 88;
+}
+div.jsn-hasleft #jsn-maincontent_inner {
+	margin-left: 10px;
+}
+div.jsn-hasright #jsn-maincontent_inner {
+	margin-right: 10px;
+}
+div.jsn-hasinnerleft #jsn-maincontent_inner1 {
+	background: url(../images/border.png) right top repeat-y;
+}
+div.jsn-hasinnerright #jsn-maincontent_inner3 {
+	background: url(../images/border.png) left top repeat-y;
+}
+#jsn-leftsidecontent,
+#jsn-rightsidecontent {
+	z-index: 87;
+}
+#jsn-maincontent_inner {
+	border: 1px solid #DADADA;
+	background: #fff;
+}
+#jsn-pos-innerright_inner,
+#jsn-pos-innerleft_inner {
+	padding: 8px;
+}
+#jsn-rightsidecontent_inner div.jsn-modulecontainer,
+#jsn-leftsidecontent_inner div.jsn-modulecontainer {
+	margin-bottom: 10px;
+}
+#jsn-leftside-middle.jsn-positionscontainer2 div#jsn-pos-left-2,
+#jsn-rightside-middle.jsn-positionscontainer2 div#jsn-pos-right {
+	float: left;
+	width: 49.95%;
+}
+#jsn-leftside-middle.jsn-positionscontainer2 div#jsn-pos-left,
+#jsn-rightside-middle.jsn-positionscontainer2 div#jsn-pos-right-2 {
+	float: right;
+	width: 49.95%;
+}
+div.jsn-positionscontainer2 #jsn-pos-left div.jsn-modulecontainer_inner,
+div.jsn-positionscontainer2 #jsn-pos-right-2 div.jsn-modulecontainer_inner {
+	margin-left: 5px;
+}
+div.jsn-positionscontainer2 #jsn-pos-left-2 div.jsn-modulecontainer_inner,
+div.jsn-positionscontainer2 #jsn-pos-right div.jsn-modulecontainer_inner {
+	margin-right: 5px;
+}
+#jsn-centercol_inner {
+	padding: 0 8px;
+}
+#jsn-mainbody {
+	padding: 8px;
+}
+#jsn-pos-breadcrumbs {
+	padding: 10px 5px 12px;
+	margin: 0;
+	font-size: 1.25em;
+}
+#jsn-pos-mainbody-top,
+#jsn-pos-mainbody-bottom,
+#jsn-usermodules1,
+#jsn-usermodules2 {
+	padding: 3px 0 10px 0;
+}
+#jsn-pos-breadcrumbs,
+#jsn-pos-user-top,
+#jsn-usermodules1,
+#jsn-pos-mainbody-top {
+	background: url(../images/dot.png) left bottom repeat-x;
+}
+#jsn-pos-user-bottom,
+#jsn-pos-banner,
+#jsn-usermodules2,
+#jsn-pos-mainbody-bottom {
+	background: url(../images/dot.png) left top repeat-x;
+}
+#jsn-usermodules1_inner_grid2,
+#jsn-usermodules2_inner_grid2 {
+	width: 100%;
+}
+#jsn-pos-banner {
+	text-align: center;
+	margin: 0 auto;
+	padding: 13px 15px 20px;
+}
+/* =============== LAYOUT - CONTENT BOTTOM AREA =============== */
+#jsn-content-bottom {
+	background: #fff;
+	margin-bottom: 10px;
+	padding: 8px;
+	border: 1px solid #DADADA;
+}
+#jsn-pos-content-bottom,
+#jsn-usermodules3 {
+	padding: 0;
+}
+/* =============== LAYOUT - FOOTER AREA =============== */
+#jsn-footer {
+	background-color: #fff;
+	font-size: 0.9em;
+	color: #999;
+	border: 1px solid #DADADA;
+	padding: 8px;
+}
+#jsn-footer_inner {
+	background: url(../images/dot.png) left top repeat-x;
+	padding-top: 5px;
+}
+#jsn-footer_inner2 {
+	padding: 5px 0;
+}
+#jsn-footer a {
+	text-decoration: none;
+}
+#jsn-footer a:hover {
+	text-decoration: underline;
+}
+#jsn-pos-bottom {
+	text-align: right;
+}
+#jsn-footer.jsn-positionscontainer2 div#jsn-footerleft {
+	float: left;
+	width: 49.95%;
+}
+#jsn-footer.jsn-positionscontainer2 div#jsn-footerright {
+	float: right;
+	width: 49.95%;
+}
+#jsn-footer div.jsn-modulecontainer {
+	margin: 5px;
+}
+#jsn-brand {
+	padding-top: 10px;
+}
+#jsn-brand a {
+	display: block;
+	width: 100px;
+	height: 20px;
+	margin: 0 auto;
+	text-indent: -999px;
+	overflow: hidden;
+	background: url(../images/logo-footer-light.png) left center no-repeat;
+}
+/* ============================== TYPOGRAPHY ============================== */
+/* =============== TYPOGRAPHY - GENERAL TYPOGRAPHY =============== */
+.hd {
+	display: none;
+}
+/* ----- PREDEFINED CONTENT ALIGN ----- */
+.align-left {
+	float: left;
+}
+.align-right {
+	float: right;
+}
+.margin-right {
+	margin-left: 0;
+	margin-right: 1em;
+}
+.margin-left {
+	margin-left: 1em;
+	margin-right: 0;
+}
+.align-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+.content-center {
+	text-align: center;
+}
+/* =============== TYPOGRAPHY - TEXT STYLES =============== */
+.text-box {
+	border: 1px solid #e5e5e5;
+	padding: .8em;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: 0px 0px 2px #999999;
+	-moz-box-shadow: 0px 0px 2px #999999;
+	-webkit-box-shadow: 0px 0px 2px #999999;
+}
+.text-box-highlight {
+	padding: .8em;
+	border: 1px solid transparent;
+}
+.text-box-highlight:hover {
+	background-color: #f2f2f2;
+	border-color: #d9d9d9;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: 0px 0px 2px #999999;
+	-moz-box-shadow: 0px 0px 2px #999999;
+	-webkit-box-shadow: 0px 0px 2px #999999;
+}
+.text-highlight {
+	padding: .2em .5em;
+	background: #FFFFAA;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+.text-highlight.highlight-green {
+	color: #fff;
+	background: #48691b;
+}
+.text-highlight.highlight-light {
+	color: #000;
+	background: #e5e5e5;
+}
+.text-highlight.highlight-dark {
+	color: #fff;
+	background: #595959;
+}
+.text-dropcap:first-letter,
+.text-dropcap :first-child:first-letter {
+	color: #404040;
+	font: 4em/.8em "Times New Roman", Times, serif;
+	float: left;
+}
+.text-size-small {
+	font-size: 0.9em;
+}
+.text-size-medium {
+	font-size: 1em;
+}
+.text-size-large {
+	font-size: 1.1em;
+}
+.text-size-xlarge {
+	font-size: 1.2em;
+}
+.text-size-xxlarge {
+	font-size: 1.3em;
+}
+hr.line-dots {
+	background: url(../images/dot.png) left center repeat-x;
+	padding: 0.5em 0;
+	border: none;
+}
+hr.line-solid {
+	
+}
+/* ----- ACTION LINK ----- */
+.link-action {
+	font-weight: bold;
+	padding: 1px 2px;
+	text-decoration: none;
+}
+.link-action:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+/* ----- HIGHLIGHT LINK ----- */
+.link-highlight {
+	color: #595959;
+	font-weight: bold;
+	display: block;
+	padding: 5px;
+	border: 1px solid transparent;
+}
+.link-highlight:hover {
+	background-color: #f2f2f2;
+	border-color: #d9d9d9;
+	color: #000;
+	text-decoration: none;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: 0px 0px 2px #999999;
+	-moz-box-shadow: 0px 0px 2px #999999;
+	-webkit-box-shadow: 0px 0px 2px #999999;
+}
+/* ----- TOOLTIPS LINK ----- */
+a.link-tooltip {
+	position: relative;
+}
+a.link-tooltip:hover {
+	z-index: 25;
+}
+a.link-tooltip span {
+	display: none;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+a.link-tooltip:hover span {
+	display: block;
+}
+/* =============== TYPOGRAPHY - LIST STYLES =============== */
+/* ----- ARROW LIST ----- */
+ul.list-arrow {
+	list-style: none;
+}
+ul.list-arrow li {
+	margin-left: 0;
+	padding-left: 16px;
+}
+ul.list-arrow.arrow-red li {
+	background: url(../images/icons/icons-arrow.png) no-repeat 0 0;
+}
+ul.list-arrow.arrow-blue li {
+	background: url(../images/icons/icons-arrow.png) no-repeat 0 -86px;
+}
+ul.list-arrow.arrow-green li {
+	background: url(../images/icons/icons-arrow.png) no-repeat 0 -172px;
+}
+/* =============== TYPOGRAPHY - IMAGES STYLES =============== */
+img.image-left {
+	float: left;
+	margin: 0.5em 1em 0.5em 0;
+}
+img.image-right {
+	float: right;
+	margin: 0.5em 0.5em 0.5em 1em;
+}
+img.image-border {
+	border: 1px solid #e5e5e5;
+	padding: 3px;
+}
+img.image-margin {
+	margin: .5em;
+}
+/* ============================== MENU ============================== */
+/* =============== MENU - GENERAL =============== */
+span.jsn-menudescription {
+	font-weight: normal;
+	font-size: 0.9em;
+}
+/* =============== MENU - MAIN MENU =============== */
+/* ----- GENERAL ----- */
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu {
+	margin: 0;
+	padding: 0;
+}
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li {
+	margin: 0 5px 0 0;
+	padding: 0;
+	list-style-type: none;
+	float: left;
+}
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li a {
+	display: block;
+	color: #666;
+	font: 1.2em Verdana,Geneva,Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 5px 10px;
+	line-height: 24px;
+}
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li a span {
+	display: block;
+}
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li a span.separator,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li a span.jsn-menutitle,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li a span.jsn-menudescription {
+	padding: 0;
+	background: none;
+}
+/* ----- RICH MENU STYLE ----- */
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li a span.jsn-menudescription {
+	display: none;
+}
+/* ----- 1st LEVEL ----- */
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu ul {
+	margin: 0;
+	padding: 0;
+	width: 185px;
+	left: -999em;
+	position: absolute;
+}
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu ul li {
+	margin: 0;
+	width: 185px;
+	border: none;
+	position: relative;
+}
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu ul li a {
+	display: block;
+	color: #FFF;
+	padding: 5px 0 5px 10px;
+	font-size: 0.9em;
+	font-weight: normal;
+	background: none;
+	line-height: 1.5em;
+}
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu ul li a span {
+	padding-left: 0;
+	background: none;
+}
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu ul ul {
+	margin-left: 184px;
+	top: 0;
+}
+/* ----- PARENT ITEMS / ADD ARROW TO ITEMS HAVE SUBLEVEL ----- */
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.parent li.parent a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.parent li.parent li.parent a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.parent li.parent li.parent li.parent a {
+	background: url(../images/icons/icons-arrow.png) no-repeat right -337px;
+	padding-right: 16px;
+}
+/* ----- CLEAR PARENT ITEMS / REMOVE ARROW FROM ITEMS DON'T HAVE SUBLEVEL ----- */
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.parent li.parent ul a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.parent li.parent li.parent ul a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.parent li.parent li.parent li.parent ul a {
+	background: none;
+	padding-right: 10px;
+}
+/* ----- HOVER STATE ----- */
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li:hover a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li li:hover a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li li li:hover a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li li li li:hover a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.sfhover a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.sfhover li.sfhover a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.sfhover li.sfhover li.sfhover a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.sfhover li.sfhover li.sfhover li.sfhover a {
+	color: #fff;
+	text-decoration: none;
+}
+/* ----- CLEAR HOVER STATE ----- */
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li:hover ul a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li li:hover ul a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li li li:hover ul a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li li li li:hover ul a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.sfhover ul a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.sfhover li.sfhover ul a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.sfhover li.sfhover li.sfhover ul a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.sfhover li.sfhover li.sfhover li.sfhover ul a {
+	background-color: transparent;
+}
+/* ----- ACTIVE STATE ----- */
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.active a {
+	background: url(../images/mainmenu-active-arrow.png) center bottom no-repeat;
+}
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.active a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.active li.active a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.active li.active li.active a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.active li.active li.active li.active a {
+	font-weight: bold;
+	color: #fff;
+}
+/* ----- CLEAR ACTIVE STATE / MAKE NON-ACTIVE ITEM NORMAL ----- */
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.active li.active {
+	background: none;
+}
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.active ul a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.active li.active ul a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.active li.active li.active ul a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.active li.active li.active li.active ul a {
+	font-weight: normal;
+	background: none;
+}
+/* ----- ROLLOVER STATE / DISPLAY SUB-MENU OF SELECTED MENU ITEM ----- */
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li:hover ul,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li li:hover ul,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li li li:hover ul,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li li li li:hover ul,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.sfhover ul,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.sfhover li.sfhover ul,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.sfhover li.sfhover li.sfhover ul,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.sfhover li.sfhover li.sfhover li.sfhover ul {
+	left: auto;
+	right: auto;
+}
+/* ----- CLEAR ROLLOVER STATE / HIDE SUB-MENU OF NON-SELECTED MENU ITEM ----- */
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li:hover ul ul,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li li:hover ul ul,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li li li:hover ul ul,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li li li li:hover ul ul,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.sfhover ul ul,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.sfhover li.sfhover ul ul,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.sfhover li.sfhover li.sfhover ul ul,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.sfhover li.sfhover li.sfhover li.sfhover ul ul {
+	left: -999em;
+}
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li li {
+	clear: both;
+}
+/* =============== MENU - TREE MENU =============== */
+/* ----- GENERAL ----- */
+div.jsn-modulecontainer ul.menu-treemenu {
+	border-top: 1px dotted #b3b3b3;
+}
+div.jsn-modulecontainer ul.menu-treemenu,
+div.jsn-modulecontainer ul.menu-treemenu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+div.jsn-modulecontainer ul.menu-treemenu li {
+	padding: 0;
+	margin: 0;
+	float: left;
+	width: 100%;
+}
+div.jsn-modulecontainer ul.menu-treemenu li a {
+	display: block;
+	border-bottom: 1px dotted #999999;
+	color: #404040;
+	text-decoration: none;
+	padding: 5px;
+	cursor: pointer;
+}
+div[class*=richbox-] ul.menu-treemenu li a {
+	color: #F2F2F2;
+}
+ul.menu-treemenu li a span,
+div.jsn-modulecontainer ul.menu-treemenu ul li a span {
+	display: block;
+	background: url(../images/icons/icons-base.png) left -343px no-repeat;
+	padding-left: 16px;
+}
+div.jsn-modulecontainer ul.menu-treemenu li a span.separator,
+div.jsn-modulecontainer ul.menu-treemenu li a span.jsn-menutitle,
+div.jsn-modulecontainer ul.menu-treemenu li a span.jsn-menudescription {
+	padding: 0;
+	background: none;
+}
+/* ----- RICH MENU STYLE ----- */
+div.jsn-modulecontainer ul.menu-treemenu li a span.jsn-menudescription {
+	display: none;
+}
+/* ---------- 1st LEVEL ---------- */
+div.jsn-modulecontainer ul.menu-treemenu ul li {
+	margin-left: 1em;
+	float: none;
+	width: auto;
+}
+div.jsn-modulecontainer ul.menu-treemenu ul li a {
+	border-bottom: none;
+}
+/* ----- ACTIVE STATE ----- */
+div.jsn-modulecontainer ul.menu-treemenu li.active a,
+div.jsn-modulecontainer ul.menu-treemenu li.active li.active a,
+div.jsn-modulecontainer ul.menu-treemenu li.active li.active li.active a,
+div.jsn-modulecontainer ul.menu-treemenu li.active li.active li.active li.active a {
+	font-weight: bold;
+}
+/* ----- CLEAR ACTIVE STATE ----- */
+div.jsn-modulecontainer ul.menu-treemenu li.active ul a,
+div.jsn-modulecontainer ul.menu-treemenu li.active li.active ul a,
+div.jsn-modulecontainer ul.menu-treemenu li.active li.active li.active ul a,
+div.jsn-modulecontainer ul.menu-treemenu li.active li.active li.active li.active ul a {
+	font-weight: normal;
+}
+/* ----- CURRENT / HOVER STATE ----- */
+div.jsn-modulecontainer ul.menu-treemenu li a:hover,
+div.jsn-modulecontainer ul.menu-treemenu li a.current {
+	background: url(../images/backgrounds/bg-menu-hover.png);
+}
+/* =============== MENU - DIV MENU =============== */
+ul.menu-divmenu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+ul.menu-divmenu:after {
+	clear: both;
+	display: block;
+	content: ".";
+	height: 0;
+	visibility: hidden;
+}
+ul.menu-divmenu li {
+	display: inline;
+	margin: 0;
+	border-right: 1px solid #B3B3B3;
+	padding: 0 0.8em;
+	float: left;
+}
+ul.menu-divmenu li.first {
+}
+ul.menu-divmenu li.last {
+	border-right-width: 0;
+}
+/* =============== MENU - TOP MENU =============== */
+ul.menu-topmenu {
+	margin: 5px 0;
+	padding: 0;
+	list-style: none;
+}
+ul.menu-topmenu li {
+	display: inline-block;
+	margin: 0 0 0 6px;
+	padding: 0;
+}
+ul.menu-topmenu li a {
+	color: #FFF;
+	padding: 4px 10px;
+	display: block;
+	font-weight: bold;
+}
+ul.menu-topmenu li a:hover {
+	text-decoration: none;
+	background: #fff;
+}
+ul.menu-topmenu li a span {
+	display: block;
+	line-height: 24px;
+}
+/* ============================== MODULE STYLES ============================== */
+h3.jsn-moduletitle {
+	margin: 0;
+	color: #666;
+	font-size: 1.2em;
+}
+h3.jsn-moduletitle span.jsn-moduleicon {
+	line-height: 24px;
+	display: block;
+}
+/* ----- RICH MENU STYLE ----- */
+.jsn-menutitle,
+.jsn-menudescription {
+	display: block;
+}
+.jsn-menudescription {
+	font-weight: normal;
+	font-size: 0.9em;
+	background: none !Important;
+}
+/* =============== MODULE STYLES - MODULE BOXES =============== */
+div[class*=richbox-] {
+	background: #fff;
+}
+div[class*=richbox-] div.jsn-modulecontainer_inner {
+	margin: 8px;
+}
+div[class*=richbox-] h3.jsn-moduletitle {
+	color: #666;
+	padding-bottom: 12px;
+	background: #FFF url(../images/dot.png) left bottom repeat-x;
+	margin: 0;
+}
+div[class*=richbox-] div.jsn-modulecontent {
+	padding: 8px;
+}
+div[class*=duohead-] h3.jsn-moduletitle span.jsn-moduleicon span {
+	color: #666;
+}
+/* ----- MODULE RICHBOX ----- */
+div[class*=richbox-] {
+	color: #FFFFFF;
+}
+div[class*=richbox-] a {
+	color: #FFFF00;
+}
+/* ----- CUSTOM BOX STYLE IN SPECIFIC POSITION ----- */
+#jsn-content-top div[class*=richbox-] {
+	background: none;
+}
+#jsn-content-top div[class*=richbox-] div.jsn-modulecontainer_inner {
+	background: #FFF;
+	margin: 4px 6px;
+	padding: 8px;
+}
+#jsn-content-top div[class*=richbox-] h3.jsn-moduletitle {
+	margin: 0;
+}
+#jsn-content-top div[class*=richbox-] h3.jsn-moduletitle {
+	color: #666;
+}
+#jsn-leftsidecontent div[class*=richbox-],
+#jsn-rightsidecontent div[class*=richbox-] {
+	border: 1px solid #DADADA;
+}
+#jsn-pos-innerleft div.jsn-modulecontainer,
+#jsn-pos-innerright div.jsn-modulecontainer {
+	background-image: url(../images/dot.png);
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	padding: 0.5em 0.5em 0.8em;
+}
+#jsn-pos-innerleft div[class*=richbox-],
+#jsn-pos-innerright div[class*=richbox-] {
+	padding: 0;
+	background-image: none;
+}
+/* ============================== JOOMLA! DEFAULT EXTENSIONS ============================== */
+/* =============== JOOMLA! EXTENSIONS - GENERAL =============== */
+/* ----- HEADING ----- */
+.contentheading,
+.componentheading,
+.subheading {
+	font-size: 1.5em;
+	margin-top: 0;
+	color: #666;
+}
+table.contentpaneopen {
+	width: 100%;
+}
+/* ----- FORM ----- */
+.jsn-formbuttons {
+	text-align: center;
+	padding-top: .45em;
+}
+table.paramlist td {
+	padding: .3em;
+}
+table.paramlist td.paramlist_key {
+	width: 150px;
+}
+/* ----- TOOLTIPS ----- */
+.tip {
+	float: left;
+	background: #ffc;
+	border: 1px solid #D4D5AA;
+	padding: 5px;
+	max-width: 200px;
+	z-index: 88;
+}
+.tip-title {
+	padding: 0;
+	margin: 0;
+	font-size: 100%;
+	font-weight: bold;
+	margin-top: -15px;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	background: url(../../system/images/selector-arrow.png) no-repeat;
+}
+.tip-text {
+	font-size: 100%;
+	margin: 0;
+}
+/* ----- POP-UP / PRINT WINDOWS ----- */
+body.contentpane {
+	color: #000000;
+	background: #FFFFFF;
+}
+body.contentpane div.com-content {
+	padding: 1em;
+}
+/* =============== JOOMLA! EXTENSIONS - COM_CONTENT =============== */
+/* ----- ARTICLE METADATA ----- */
+.jsn-article-metadata {
+	margin: 0.3em 0;
+}
+/* ----- ARTICLE TOOLBAR ----- */
+.jsn-article-toolbar {
+	margin-bottom: .6em;
+	background-color: #f4f4f4;
+	position: relative;
+	min-height: 28px;
+}
+.jsn-article-toolbar dl {
+	padding: 5px;
+}
+#article-index {
+    background-color: #F2F2F2;
+    border: 1px solid #D9D9D9;
+    float: right;
+    margin: 0 0 1em 1em;
+}
+#article-index ul {
+	margin: 0;
+	list-style-type: none;
+}
+#article-index ul li {
+	margin: 0;
+	padding: 0.25em 0.6em;
+}
+/* ----- ARTICLE INFO ----- */
+.jsn-article-info {
+	padding: 0.3em 0.6em;
+}
+.author,
+.createdate,
+.publishdate,
+.hits {
+	margin: 5px 0;
+	color: #595959;
+	font-size: 0.9em;
+}
+.author,
+.createdate,
+.publishdate {
+	padding-left: 22px;
+}
+.author {
+	background: url(../images/icons/icons-base.png) no-repeat 0 0;
+}
+.createdate,
+.publishdate {
+	background: url(../images/icons/icons-base.png) no-repeat 0 -86px;
+}
+.modifydate {
+	margin: 1em 0;
+	text-align: right;
+	color: #999999;
+	font-style: italic;
+}
+/* ----- 2 BUTTON PRINT, EMAIL CONTAINER ----- */
+ul.jsn-article-tools {
+	float: right;
+	margin: 0;
+	padding: 6px;
+	list-style: none;
+}
+ul.jsn-article-tools li {
+	margin: 0 0 0 10px;
+	float: left;
+}
+ul.jsn-article-tools li a {
+	float: left;
+	display: block;
+	height: 16px;
+	width: 16px;
+	background: url(../images/icons/icons-base.png) left top no-repeat;
+}
+ul.jsn-article-tools li.jsn-article-icon-edit a {
+	background: none;
+}
+ul.jsn-article-tools li a.jsn-article-print-button {
+	background-position: 0 -430px;
+}
+ul.jsn-article-tools li a.jsn-article-email-button {
+	background-position: 0 -516px;
+}
+ul.jsn-article-tools li a:hover {
+	text-decoration: none;
+}
+.jsn-article-submit {
+	margin-top: 0.8em;
+}
+.item-title-entry .icon-edit {
+	display: inline-block;
+}
+/* ----- SUBMIT AN ARTICLE ----- */
+.field-title {
+	width: 120px;
+	float: left;
+}
+.formelm, .formelm-area {
+	margin: 5px 0;
+	clear: both;
+}
+/* ----- READ MORE ----- */
+a.readon {
+	color: #fff;
+	padding: 3px 8px;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+a.readon:hover {
+	border-color: #000;
+	box-shadow: 0px 0px 3px #333333;
+	-moz-box-shadow: 0px 0px 3px #333333;
+	-webkit-box-shadow: 0px 0px 3px #333333;
+}
+/* ----- TABLE OF CONTENT ----- */
+table.contenttoc {
+	margin: 0 0 1em 1em;
+	border: 1px solid #D9D9D9;
+	background: #f2f2f2;
+	float: right;
+}
+table.contenttoc th {
+	padding: .4em;
+	background: url(../images/border.png) bottom repeat-x;
+	font-weight: bold;
+	text-align: center;
+}
+table.contenttoc td {
+	padding: .25em .6em;
+}
+/* PAGE LINK IN TOC */
+a.toclink {
+	font-size: .9em;
+}
+/* PAGE NUMBER SHOWING "PAGE 1 OF ..." UNDER TOC */
+div.pagenavcounter {
+	color: #595959;
+	margin: .5em 0;
+	font-size: .9em;
+	font-weight: bold;
+}
+/* PAGE NAVIGATION */
+div.pagenavbar div {
+	color: #999999;
+	font-weight: bold;
+	font-size: .9em;
+}
+/* ----- SECTION / CATEGORY BLOG LAYOUT ----- */
+/* SEPARATOR BETWEEN ARTICLES */
+span.article_separator {
+	display: block;
+	height: 1.5em;
+}
+span.row-separator {
+	display: block;
+	clear: both;
+}
+/* ARTICLE COLUMN CONTAINER */
+.jsn-articlecols {
+	float: left;
+}
+.jsn-articlecols .jsn-article {
+	padding: 0 5px;
+}
+/* "MORE ARTICLES..." PANEL HEADING TEXT */
+div.blog_more {
+	background-color: #F4F4F4;
+	border: 1px solid #e5e5e5;
+	padding: 0.2em 1em;
+	margin: 0 0 1em 0;
+}
+div.blog_more h2 {
+	font-size: 1.2em;
+	color: #666;
+}
+/* PAGE PAGINATION */
+ul.pagenav,
+div.pagination ul {
+	list-style-type: none;
+}
+ul.pagenav {
+	text-align: center;
+}
+ul.pagenav li,
+div.pagination ul li {
+	color: #999;
+	margin: 0;
+	display: inline;
+	font-weight: bold;
+}
+div.pagination ul li {
+	font-size: 0.9em;
+}
+ul.pagenav li a,
+div.pagination ul li a {
+	margin: 0 15px;
+}
+ul.jsn-pagination {
+	list-style-type: none;
+	text-transform: uppercase;
+}
+ul.jsn-pagination li {
+	display: inline;
+	margin: 0;
+}
+ul.jsn-pagination li a,
+ul.jsn-pagination li span {
+	font-weight: bold;
+	padding: 3px 8px;
+	border: 1px solid #CCC;
+	background-color: #EAEAEA;
+	color: #999;
+}
+ul.jsn-pagination li a:hover {
+	color: #000;
+	text-decoration: none;
+}
+ul.jsn-pagination li.navigation-page span {
+	border: none;
+	padding: 4px 9px;
+	color: #fff;
+}
+ul.jsn-pagination,
+p.jsn-pageinfo {
+	text-align: center;
+	margin: 10px 0 0 0;
+	font-size: 0.9em;
+}
+/* BLOG PAGES NAV LINK */
+a.pagenav {
+	text-transform: uppercase;
+}
+/* ----- CATEGORY LIST LAYOUT ----- */
+/* DESCRIPTION IN CONTENT TABLE AND COMPONENT PAGE */
+.contentdescription {
+	padding: .5em 0;
+}
+/* TABLE IN CATEGORY TABLE PAGE */
+.sectiontableheader {
+	padding: 5px 8px;
+	font-weight: bold;
+	font-size: 1.1em;
+	color: #FFFFFF;
+}
+.sectiontableheader img {
+	margin: 0;
+	vertical-align: text-top;
+}
+.sectiontableheader a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+.sectiontableheader a:hover {
+	text-decoration: none;
+}
+/* TABLE FILTER */
+.jsn-infofilter {
+	padding: 0.6em 0;
+	text-align: right;
+}
+.jsn-titlefilter {
+	float: left;
+}
+.archived-article-list .jsn-infofilter {
+	text-align: left;
+}
+/* TABLE'S ROW 1 */
+tr.sectiontableentry1 td {
+	padding: 5px 8px;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+/* TABLE'S ROW 2 */
+tr.sectiontableentry2 td {
+	padding: 5px 8px;
+}
+/* ----- SECTION LAYOUT ----- */
+/* LINKS IN SECTION TABLE PAGE */
+a.category {
+	font-weight: bold;
+}
+/* =============== JOOMLA! EXTENSIONS - COM_CONTACT =============== */
+div.contact-email div {
+	margin: 10px 0;
+}
+div.contact-email div div {
+	margin: 0;
+}
+/* ----- STANDARD CONTACT LAYOUT - CONTACT FORM INPUT BOXES ----- */
+input#contact_name,
+input#contact_email,
+input#contact_subject,
+#contact_text {
+	display: block;
+}
+/* ----- STANDARD CONTACT LAYOUT ----- */
+.com-contact #contact-slider h3.title {
+	padding: 5px;
+	margin: 5px 0;
+	border: 1px solid #CCC;
+	background-color: #F4F4F4;
+}
+.com-contact #contact-slider h3.title a {
+	color: #999;
+	font-size: 12px;
+	text-decoration: none;
+}
+.com-contact #contact-slider h3.pane-toggler-down a {
+	color: #000;
+}
+.com-contact #contact-slider .pane-slider {
+	padding: 0 10px;
+}
+.contact-form #contact-form fieldset {
+	padding: 0 10px;
+}
+.contact-form #contact-form dt {
+	margin: 10px 0 5px 0;
+}
+.contact-form #contact-form dd {
+	margin-left: 0;
+}
+.contact-address .jicons-icons {
+	float: left;
+}
+.contact-address .address span  {
+	display: block;
+	padding: 0 0 2px 22px;
+}
+/* ----- STANDARD CONTACT LAYOUT - CONTACT FORM INPUT BOXES ----- */
+.form-required {
+	color: #EF593B;
+	font-weight: bold;
+	text-align: right;
+}
+input#contact-formname,
+input#contact-email,
+input#contact-subject,
+#contact-text {
+	display: block;
+}
+/* =============== JOOMLA! EXTENSIONS - COM_SEARCH =============== */
+div.com-search #searchForm .search-phrase {
+	margin-left: 95px;
+}
+div.com-search #searchForm .search-range input,
+div.com-search #searchForm .search-phrase input {
+	vertical-align: text-top;
+	margin: 0 0 0 5px;
+}
+div.com-search #searchForm .search-keyword label,
+div.com-search #searchForm .search-ordering label,
+div.com-search #searchForm .search-field-title {
+	float: left;
+	text-align: right;
+	width: 95px;
+	line-height: 21px;
+	padding-right: 3px;
+}
+div.com-search #searchForm .search-ordering select {
+	padding: 2px 0;
+}
+div.com-search #searchForm .search-range label {
+	line-height: 21px;
+}
+/* ----- KEYWORD GIGHLIGHT IN SEARCH RESULT ----- */
+span.highlight {
+	padding: .2em;
+	background: #FFFFAA;
+}
+/* =============== JOOMLA! EXTENSIONS - COM_WEBLINK =============== */
+table.jsn-infotable .description p {
+	margin: 0;
+}
+table.jsn-infotable ul.actions {
+	display: inline;
+}
+table.jsn-infotable ul.actions li {
+	display: inline;
+	margin: 0 0 0 5px;
+}
+#editor-xtd-buttons {
+	float: left;
+}
+/* =============== JOOMLA! EXTENSIONS - COM_NEWSFEED =============== */
+div.com-newsfeed td.jsn-table-column-name {
+	font-weight: bold;
+}
+/* =============== JOOMLA! EXTENSIONS - COM_USER =============== */
+/* ----- USER FORM LAYOUT ----- */
+div.com-user table.jsn-formtable label {
+	display: block;
+	width: 150px;
+}
+table .paramlist_key {
+	width: 130px;
+}
+/* ----- REGISTER FORM ----- */
+.jsn-formRow {
+	margin: 8px 0;
+}
+.jsn-formRow .jsn-formRow-lable {
+	float: left;
+	width: 170px;
+}
+/* =============== JOOMLA! EXTENSIONS - POPUP COMPONENT =============== */
+#jsn-content-popup {
+	max-width: 1018px;
+	margin: 20px auto;
+}
+#jsn-content-popup .com-content {
+	padding-top: 0;
+}
+#mailto-window {
+	background: #f5f5f5;
+	padding: 15px;
+	border: solid 1px #ddd;
+	position: relative;
+}
+#mailto-window h2 {
+	font: bold 1.2em "Times New Roman", Times, serif;
+    margin: 0 0 10px;
+    padding: 3px 0;
+}
+#mailto-window label {
+	width: 8em;
+	display: inline-block;
+}
+#mailto-window .mailto-close {
+	position: absolute;
+	right: 0; 
+	top: 5px; 
+	background: none;
+}
+#mailto-window .mailto-close a {
+	background: url(../images/icons/icon-close.png) no-repeat 0 0;
+	min-width: 25px; 
+	display: block;
+	min-height: 25px;
+	overflow: visible
+}
+#mailto-window .mailto-close a span {
+	position: absolute;
+	left: -3000px;
+	top: -3000px;
+	display: inline
+}
+#mailto-window .inputbox {
+	background: #FFF url(../images/backgrounds/popup-bg.png) repeat-x 0 0;
+	border: 1px solid #ccc;
+	padding: 3px;
+}
+#mailto-window p {
+    margin: 20px 0 8px 0;
+}
+#mailto-window button {
+	cursor: pointer;
+	font: bold 1em "Times New Roman", Times, serif;
+	margin:0 5px 0 0;
+	padding: 3px 10px;
+	border: 1px solid #ccc;	
+	background: #fff;
+}
+#mailto-window .formelm,
+#mailto-window .formelm-area {
+    clear: both;
+    margin: 5px 0;
+}
+/* =============== JOOMLA! EXTENSIONS - SYSTEM MESSAGES =============== */
+/* ----- SYSTEM STANDARD MESSAGES ----- */
+#system-message {
+	margin-bottom: 20px;
+}
+#system-message dd.message ul {
+	text-indent: 0;
+	padding-left: 40px;
+	background: #c3d2e5 url(../../../media/system/images/notice-info.png) 4px center no-repeat;
+}
+#system-message ul li {
+	margin-left: 0;
+}
+/* ----- SYSTEM ERROR MESSAGES ----- */
+#system-message dd.error ul {
+	background: #e6c0c0 url(../../../media/system/images/notice-alert.png) 4px center no-repeat;
+}
+/* ----- SYSTEM NOTICE MESSAGES ----- */
+#system-message dd.notice ul {
+	border-top: 3px solid #f0dc7e;
+	border-bottom: 3px solid #f0dc7e;
+	color: #cc0000;
+	background: #efe7b8 url(../../../media/system/images/notice-note.png) 4px center no-repeat;
+}
+/* =============== JOOMLA! EXTENSIONS - MOD_BREADCRUMB =============== */
+span.breadcrumbs {
+	font-size: 0.9em;
+	display: block;
+}
+span.breadcrumbs a,
+span.breadcrumbs span {
+	color: #9F9F9F;
+	background: url(../images/icons/icons-arrow.png) right -258px no-repeat;
+	padding-right: 18px;
+	text-decoration: none;
+}
+span.breadcrumbs a:hover {
+	text-decoration: underline;
+}
+span.breadcrumbs span.current {
+	font-weight: bold;
+	background: none;
+}
+/* =============== JOOMLA! EXTENSIONS - MOD_LOGIN =============== */
+#form-login fieldset.input {
+	border: none;
+	padding: 0;
+}
+#form-login div.button-wrapper {
+	text-align: center;
+	margin-top: 0.5em;
+}
+#form-login #form-login-username,
+#form-login #form-login-password,
+#form-login #form-login-remember {
+	margin: 0 0 6px 0;
+}
+/* =============== JOOMLA! EXTENSIONS - MOD_SEARCH =============== */
+#jsn-pos-top div.search {
+	float: right;
+	height: 22px;
+	margin-left: 6px;
+}
+#jsn-pos-top div.search input {
+	display: inline;
+	position: relative;
+	margin-left: 3px;
+}
+#jsn-pos-top div.search input#mod_search_searchword {
+	background: #fff url(../images/icons/icons-base.png) no-repeat 6px -168px;
+	padding: 4px 5px 4px 26px;
+	border: 1px solid #000000;
+}
+#jsn-pos-top div.search input.button {
+	padding: 2px 8px;
+}
+/* =============== JOOMLA! EXTENSIONS - MOD_NEWSFLASH =============== */
+.jsn-mod-newsflash.jsn-horizontal-container .jsn-article {
+	padding: 0 1em;
+}
+.jsn-mod-newsflash .contentheading{
+	margin: 0 0 0.3em 0;
+}
+.jsn-mod-newsflash .article-separator{
+	display: block;
+    height: 0.5em;
+}
+/* ============================== JOOMLA 1.6 CORE COMPONENT LAYOUT ============================== */
+.article-info {
+    font-size: 0.9em;
+    margin: 10px 0 10px 0;
+}
+.article-info-term {
+    display: none;
+}
+.archive .article-info dd, .article-info dd {
+    line-height: 1.2em;
+    margin: 2px 0 0;
+}
+.categories-list ul {
+    list-style-type: none;
+}
+.cat-children ul dl dt, 
+.cat-children ul dl dd, 
+dl.article-count dt, 
+dl.article-count dd {
+  display: inline;
+}
+.login-fields {
+    margin: 10px 0;
+}
+.login-fields label {
+    float: left;
+    width: 9em;
+}

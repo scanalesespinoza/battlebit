@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension type="module" version="1.6.0" method="upgrade" client="site">
+	<name>S5 Habla Chat</name>
+	<author>Shape5.com</author>
+	<creationDate>August 2008</creationDate>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>contact@shape5.com</authorEmail>
+	<authorUrl>www.shape5.com</authorUrl>
+	<version>1.6.0</version>
+	<description>This module will display a small chat box powered by http://www.olark.com</description>
+	<files>
+		<filename module="mod_s5_habla_chat">mod_s5_habla_chat.php</filename> 
+	</files>
+	<config>
+		<fields name="params">
+		<fieldset name="basic">
+	<field type="spacer" name="spacer0" label="&lt;span style=&quot;width:474px;display:block;font-weight:bold&quot;&gt;Note: You must first signup with an account at www.olark.com before setting up this module.&lt;/span&gt;" />
+	<field name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+	</field>
+	<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+	<field name="hablaid" type="text" default="" label="Olark ID" description="" />
+
+	<field name="pretext" type="textarea" cols="40" rows="5" default="" label="Pre-Text" description="Enter any pre-text message. This text will open Olark when clicked." />
+	<field name="posttext" type="textarea" cols="40" rows="5" default="" label="Post-Text" description="Enter any post-text message." />
+</fieldset>
+		</fields>
+	</config>
+</extension>

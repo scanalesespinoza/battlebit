@@ -1,0 +1,13 @@
+﻿#maincontent {
+	width: 96%;
+}
+#top {
+	width: 96%;
+}
+div.module_menu div div div {
+	width: 100%;
+}
+div.module div div div, div.module_text div div div {
+	width: 160px;
+	margin:0;
+}

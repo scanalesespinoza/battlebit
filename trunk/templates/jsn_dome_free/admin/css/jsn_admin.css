@@ -1,0 +1,749 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2008 - 2011 JoomlaShine.com. All rights reserved.
+* @license   JoomlaShine.com Proprietary License
+*/
+/* ============================== GENERAL ============================== */
+p, pre, blockquote, form, dl, ul, ol, fieldset, address {
+	margin: 0.35em 0 0.8em;
+	padding: 0;
+}
+ul li {
+	margin: 0.3em 0 0.3em 1.6em;
+	padding: 0;
+}
+ol li {
+	margin: 0.3em 0 0.3em 2em;
+	padding: 0;
+}
+a:link, a:visited {
+	text-decoration: underline;
+	outline: none;
+	color: #009aca;
+}
+a:hover {
+	text-decoration: none;
+}
+hr {
+	background-color: #cccccc;
+	height: 1px;
+	border: none;
+	margin: 1.5em 0;
+}
+.clearafter:after {
+	clear: both;
+	display: block;
+	content: ".";
+	height: 0;
+	visibility: hidden;
+}
+.clearbreak {
+	clear: both;
+}
+
+.jsn-readonly, #jform_params_mobileLogoPath,
+.jsn-readonly, #jform_params_logoPath{
+	background-color: #ECE9D8;
+}
+/* ============================== TYPOGRAPHY ============================== */
+/* =============== TYPOGRAPHY - GENERAL =============== */
+.hd {
+	display: none;
+}
+/* =============== TYPOGRAPHY - LINK =============== */
+a.link-action:link,
+a.link-action:visited {
+	color: #009ACA;
+	font-weight: bold;
+	text-decoration: none;
+	transition: color 0.3s linear, background 0.3s ease-out;
+	-moz-transition: color 0.3s linear, background 0.3s ease-out;
+	-webkit-transition: color 0.3s linear, background 0.3s ease-out;
+	border-bottom: 1px solid #009ACA;
+}
+a.link-action:hover {
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #009ACA;
+}
+.link-button:link,
+.link-button:visited {
+	color: #333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #999999;
+	padding: 5px 8px;
+	cursor: pointer;
+	background: url(../images/bg-button.png) left bottom repeat-x;
+	display: inline-block;
+	margin: 5px;
+	text-decoration: none;
+}
+.link-button-big:link,
+.link-button-big:visited {
+	color: #333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #999999;
+	display: inline-block;
+	cursor: pointer;
+	background: url(../images/bg-button-big.png) left bottom repeat-x;
+	font-size: 16px;
+	margin: 5px 10px;
+	padding: 8px 15px;
+	text-decoration: none;
+}
+.link-button:hover,
+.link-button-big:hover {
+	text-decoration: none;
+	-webkit-box-shadow: 0px 0px 2px #333333;
+	-moz-box-shadow: 0px 0px 2px #333333;
+	box-shadow: 0px 0px 2px #333333;
+}
+.link-button-big span {
+	padding-top: 50px;
+	display: block;
+	line-height: 1.5em;
+}
+.link-button-big span.icon-play {
+	background: url(../images/icon-play.png) no-repeat center 8px;
+}
+.link-button-big span.icon-download {
+	background: url(../images/icon-download.png) no-repeat center 8px;
+}
+.link-button-big strong {
+	display: block;
+	font-size: 1.1em;
+}
+.link-disabled {
+	font-weight: bold;
+	color: #999;
+	background: none;
+}
+.link-disabled:hover {
+	cursor: default;
+	color: #999;
+}
+.icon-twitter {
+	background: url(../images/icon-twitter.png) left center no-repeat;
+	display: inline-block;
+	padding-left: 22px;
+}
+.icon-gallery {
+	background: url(../images/icon-gallery.png) left center no-repeat;
+	display: inline-block;
+	padding-left: 22px;
+}
+.jsn-disabled-button:link,
+.jsn-disabled-button:visited{
+	color: #ACA899;
+	background: #F1F1ED;
+	cursor:default;
+}
+.jsn-disabled-button:hover {
+	-webkit-box-shadow: 0px 0px 0px #FFF;
+	-moz-box-shadow: 0px 0px 0px #FFF;
+	box-shadow: 0px 0px 0px #FFF;
+	color: #ACA899 !important;
+}
+/* =============== TYPOGRAPHY - LIST =============== */
+/* ----- HORIZONTAL LIST ----- */
+ul.list-horizontal {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ul.list-horizontal:after {
+	clear: both;
+	display: block;
+	content: ".";
+	height: 0;
+	visibility: hidden;
+}
+ul.list-horizontal li {
+	display: block;
+	float: left;
+}
+/* ----- NOBULLET LIST ----- */
+ul.list-nobullet {
+	margin: 0;
+	list-style: none;
+}
+ul.list-nobullet li {
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+}
+/* ============================== TEMPLATE DESCRIPTION ============================== */
+div.template-description {
+	margin: 6px;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 150%;
+	color: #666666;
+}
+div.template-description ul {
+	margin: 0;
+	padding: 0;
+}
+div.template-description p {
+	margin: 0.35em 0 0.8em;
+}
+div.template-description hr {
+	margin: 1.5em 0;
+}
+div.template-description p.jsn-action-buttons {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+div.template-description p.jsn-action-buttons .link-button-big {
+	min-width: 135px;
+}
+.template-description > div {
+	margin-bottom: 1.5em;
+}
+.template-description h3 {
+	font-size: 18px;
+	margin: 0 0 0.6em;
+	color: #000;
+}
+.template-description h4 {
+	margin: 0 0 0.5em;
+	font-size: 15px;
+}
+.template-description .icon-pro {
+	background: #cc0000 url(../images/icon-pro.png);
+	display: inline-block;
+	width: 29px;
+	height: 15px;
+	color: #FFFFFF;
+	text-indent: -9999em;
+}
+.template-description .icon-tip {
+	background: #fff url(../images/icon-tip.png);
+	display: inline-block;
+	width: 12px;
+	height: 16px;
+	text-indent: -9999em;
+	margin-left: 6px;
+}
+fieldset div.template-description ul li {
+	list-style: disc inside;
+	padding: 2px 0 2px 10px;
+	margin: 0;
+}
+/* ============================== TEMPLATE PARAMETERS ============================== */
+/* =============== TEMPLATE PARAMETERS - CONTAINER =============== */
+div.width-50 fieldset.adminform {
+	padding: 8px 12px;
+	margin: 6px;
+}
+div#content-pane {
+	margin: 5px 0;
+	min-width: 550px;
+}
+div#content-pane fieldset.panelform {
+	padding: 0 5px;
+	margin: 0;
+}
+div#content-pane fieldset.panelform ul li {
+	margin: 0;
+	padding: 0;
+}
+div#content-pane fieldset.panelform ul li:after {
+	clear: both;
+	display: block;
+	content: ".";
+	height: 0;
+	visibility: hidden;
+}
+div#content-pane div.jsn-panel ul li span.jsn-posttext{
+	float:left;
+	display:block;
+	color:#666666;
+	font-size: 11px;
+	font-weight: normal;
+	margin:5px 0;
+}
+/* =============== EXPAND / COLLAPSE BUTTONS	 =============== */
+.jsn-controller {
+	margin-bottom: 10px;
+}
+.jsn-controller #separator {
+	margin: 0 6px;
+}
+/* =============== AMDIN TABLE =============== */
+table.admintable {
+	width: 100%;
+}
+/* =============== TEMPLATE PARAMETERS - GENERAL =============== */
+div.jsn-pane-sliders div.jsn-panel h3 {
+	background-color: #F4F4F4;
+	border: 1px solid #DFDFDF;
+	margin: 5px 0 0 0;
+	padding: 6px 2px 6px 8px;
+	font: 11px Verdana, Geneva, sans-serif;
+	font-weight: bold;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	height: 1%;
+}
+div#content-pane div.jsn-panel ul li label {
+	color: #666;
+	padding: 0;
+	font-size: 11px;
+	font-weight: bold;
+	max-width: 145px;
+}
+div#content-pane div.jsn-panel ul li fieldset.radio {
+	padding: 0;
+}
+div#content-pane div.jsn-panel ul li fieldset.radio label {
+	min-width: 0;
+	width: 15px;
+	font-weight: normal;
+	color: #000;
+}
+div#content-pane div.jsn-panel ul li fieldset.radio input {
+	margin: 5px;
+}
+div#content-pane div.jsn-panel textarea {
+	width: auto;
+}
+div.jsn-pane-sliders div.jsn-panel h3 span {
+	display: block;
+}
+div.jsn-pane-sliders div.jsn-panel h3 span.pro {
+	background: url(../images/icon-pro.png) right center no-repeat;
+	padding: 1px 0;
+}
+div.jsn-pane-sliders div.jsn-panel h3 span.toggle-arrow {
+	background: url(../images/icons-admin.png) right -1548px no-repeat;
+	padding-right: 20px;
+}
+div.jsn-pane-sliders div.jsn-panel h3.jsn-pane-toggler-down span.toggle-arrow {
+	background-position: right -1634px;
+}
+div.jsn-pane-sliders div.jsn-panel h3.jsn-pane-toggler-down {
+	margin-bottom: 3px;
+	border: 1px solid #000;
+	color: #fff;
+	background: url(../images/bg-params-heading.png) left bottom repeat-x;
+}
+div.jsn-pane-sliders h3.title span.param-icon {
+	background: url(../images/icons-admin.png) no-repeat;
+	padding: 2px 0 2px 25px;
+}
+div.jsn-pane-sliders h3#about-options span.param-icon {
+	background-position: left -86px;
+}
+div.jsn-pane-sliders h3#about-options.jsn-pane-toggler-down span.param-icon {
+	background-position: left 0;
+}
+div.jsn-pane-sliders h3#sample-data-options span.param-icon {
+	background-position: left -258px;
+}
+div.jsn-pane-sliders h3#sample-data-options.jsn-pane-toggler-down span.param-icon {
+	background-position: left -172px;
+}
+div.jsn-pane-sliders h3#logo-settings-options span.param-icon {
+	background-position: left -430px;
+}
+div.jsn-pane-sliders h3#logo-settings-options.jsn-pane-toggler-down span.param-icon {
+	background-position: left -344px;
+}
+div.jsn-pane-sliders h3#layout-settings-options span.param-icon {
+	background-position: left -602px;
+}
+div.jsn-pane-sliders h3#layout-settings-options.jsn-pane-toggler-down span.param-icon {
+	background-position: left -516px;
+}
+div.jsn-pane-sliders h3#style_settings-options span.param-icon {
+	background-position: left -774px;
+}
+div.jsn-pane-sliders h3#style_settings-options.jsn-pane-toggler-down span.param-icon {
+	background-position: left -688px;
+}
+div.jsn-pane-sliders h3#menu_sitetools-options span.param-icon {
+	background-position: left -946px;
+}
+div.jsn-pane-sliders h3#menu_sitetools-options.jsn-pane-toggler-down span.param-icon {
+	background-position: left -860px;
+}
+div.jsn-pane-sliders h3#seo_system-options span.param-icon {
+	background-position: left -1118px;
+}
+div.jsn-pane-sliders h3#seo_system-options.jsn-pane-toggler-down span.param-icon {
+	background-position: left -1032px;
+}
+div.jsn-pane-sliders h3#mobile-options span.param-icon {
+	background-position: left -1290px;
+}
+div.jsn-pane-sliders h3#mobile-options.jsn-pane-toggler-down span.param-icon {
+	background-position: left -1204px;
+}
+div.jsn-pane-sliders h3#ext_settings-options span.param-icon {
+	background-position: left -1462px;
+}
+div.jsn-pane-sliders h3#ext_settings-options.jsn-pane-toggler-down span.param-icon {
+	background-position: left -1376px;
+}
+div.jsn-pane-sliders div.jsn-panel h3:hover {
+	cursor: pointer;
+}
+div.jsn-pane-sliders div.jsn-panel div.content {
+	margin-left: -1px;
+}
+/*=============== TEMPLATE PARAMETERS - SPACER ==================*/
+div#content-pane fieldset.panelform span.spacer {
+	display: block;
+}
+div#content-pane fieldset.panelform span.spacer label {
+	font-size: 12px;
+	padding: 5px;
+	background-color: #f6f6f6;
+	font-weight: bold;
+	float: none;
+	text-align: center;
+	margin: 3px 0;
+	max-width: none;
+	color: #000;
+}
+/*=============== TEMPLATE PARAMETERS - ABOUT ==================*/
+div#content-pane label#jform_params_jsnabout-lbl {
+	display: none;
+}
+.jsn-about {
+	font-size: 12px;
+	line-height: 1.5;
+}
+.jsn-about img {
+	margin: 5px 5px 0 0;
+}
+.jsn-about h2 {
+	font-size: 20px;
+	margin: 0;
+}
+.jsn-about p {
+	color: #000;
+	margin-top: 5px;
+}
+.jsn-about hr {
+	background-color: #E6E6E6;
+	margin: 0.6em 0;
+}
+.jsn-about dt {
+	color: #666666;
+	float: left;
+	font-weight: bold;
+	padding: 3px;
+	width: 15%;
+}
+.jsn-about dd {
+	padding: 3px;
+	margin-left: 65px;
+}
+.jsn-about dl {
+	margin: 3px 0;
+}
+.jsn-about p.jsn-action-buttons {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.jsn-about .jsn-outdated-version,
+.jsn-about .jsn-outdated-version .jsn-connection-fail {
+	color: #CC0000;
+}
+.jsn-about .jsn-outdated-version .jsn-newer-version {
+	font-weight: bold;
+}
+.jsn-about .jsn-outdated-version .jsn-template-log {
+	color: #000;
+}
+.jsn-about .jsn-latest-version {
+	color: #009900;
+}
+.jsn-about .jsn-version-checking {
+	color: #666666;
+}
+.jsn-about .jsn-current-version {
+	font-weight: bold;
+	color: #666666;
+}
+.jsn-about table td {
+	padding: 3px;
+}
+/*=============== TEMPLATE PARAMETERS - SAMPLE DATA ==================*/
+div#content-pane label#jform_params_jsn_sample_data-lbl {
+	display: inline;
+	max-width: 0;
+	min-width: 0;
+}
+.jsn-sampledata {
+	font-size: 12px;
+	float: left;
+}
+.jsn-sampledata .link-button {
+}
+/*=============== CACHE FOLDER ==================*/
+div.jsn-cachefolder {
+	float: left;
+}
+div.jsn-cachefolder span#jsn-checkcache {
+	float: left;
+	margin: 5px 5px 5px 0;
+}
+span#jsn-checkcache-result {
+	padding: 0 6px;
+}
+/*======================== JSN MOBILE ==========================*/
+.jsn-positionmapping {
+	width: 250px;
+	float: left;
+	padding-left: 25px;
+	background: url("../images/icons-admin.png") no-repeat scroll left -1698px transparent;
+}
+.jsn-positionmapping select {
+	float: left;
+	margin: 2px 0;
+}
+/* ============================== NSTALL SAMPLE DATA PAGE ============================== */
+#jsn-sampledata #jsn-page {
+	width: 750px;
+	margin: 3em auto;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 1.5;
+}
+#jsn-sampledata #jsn-page_inner1 {
+	background-color: #eaeaea;
+}
+#jsn-sampledata #jsn-page_inner2 {
+	position: relative;
+	left: -5px;
+	top: -5px;
+	background-color: #ffffff;
+	color: #000;
+	border: 1px solid #9f9f9f;
+	padding: 2em;
+}
+#jsn-sampledata h1 {
+	font-size: 1.6em;
+	margin-top: 0;
+}
+#jsn-sampledata h2 {
+	font-size: 1.3em;
+	margin-bottom: 0.6em;
+}
+#jsn-sampledata h3 {
+	font-size: 1.1em;
+	margin-bottom: 0.6em;
+}
+#jsn-sampledata #jsn-page hr {
+	margin: 1.5em 0;
+}
+#jsn-sampledata .link-action {
+	padding: 1px 2px;
+}
+div#jsn-wrap-installation-content {
+	width: 650px;
+	margin: 2em auto;
+	padding: 5px 20px 10px;
+	border:1px solid #CCC;
+}
+#installSampleDataFrom .jsn-install-admin-info {
+	margin-top: 10px;
+}
+#installSampleDataFrom .jsn-install-admin-info p {
+	margin: 0.6em 0;
+}
+#installSampleDataFrom .jsn-install-admin-info span {
+	float: left;
+	width: 100px;
+}
+#installSampleDataFrom .jsn-install-admin-info #username,
+#installSampleDataFrom .jsn-install-admin-info #password {
+	width: 350px;
+}
+#installSampleDataFrom .jsn-install-admin-check {
+	margin: 15px 0;
+}
+#installSampleDataFrom .jsn-install-admin-check p {
+	position: relative;
+}
+#installSampleDataFrom .jsn-install-admin-check input {
+	position: absolute;
+}
+#installSampleDataFrom .jsn-install-admin-check label {
+	margin-left: 25px;
+	display: block;
+}
+#installSampleDataFrom .jsn-install-admin-navigation {
+	text-align: center;
+}
+#jsn-sampledata .text-alert {
+	border-top: 2px solid #FEABAB;
+	border-bottom: 2px solid #FEABAB;
+	background: #FFDFDF url(../../images/icons/icon-text-alert.png) left center no-repeat;
+	padding: 0.6em 0.8em 0.6em 4.8em;
+}
+#jsn-sampledata .text-info {
+	border-top: 2px solid #B7D2F2;
+	border-bottom: 2px solid #B7D2F2;
+	background: #DBE7F8 url(../../images/icons/icon-text-info.png) left center no-repeat;
+	padding: 0.6em 0.8em 0.6em 4.8em;
+}
+#jsn-sampledata .text-alert em {
+	font-weight: bold;
+}
+#jsn-sampledata button.action-submit {
+	padding: 3px 10px;
+	font-weight: bold;
+}
+#jsn-sampledata .action-cancel {
+	display: inline-block;
+	padding: 5px;
+}
+#jsn-sampledata-error-message {
+	margin-bottom:10px;
+	background-color: #E6C0C0;
+	border-bottom: 3px solid #DE7A7B;
+	border-top: 3px solid #DE7A7B;
+	color: #CC0000;
+	font-size: 12px;
+	position: relative;
+	font-weight:bold;	
+}
+span#jsn-sampledata-success-message{
+	color:#339900;	
+}
+/* =============== JOOMLA! EXTENSIONS - SYSTEM MESSAGES =============== */
+/* ----- SYSTEM STANDARD MESSAGES ----- */
+#system-message {
+	margin-bottom: 20px;
+}
+#system-message dd.message ul {
+	text-indent: 0;
+	padding-left: 40px;
+	background: #c3d2e5 url(../../../../templates/system/images/notice-info.png) 4px center no-repeat;
+}
+#system-message ul li {
+	margin-left: 0;
+}
+/* ----- SYSTEM ERROR MESSAGES ----- */
+#system-message dd.error ul {
+	background: #e6c0c0 url(../../../../templates/system/images/notice-alert.png) 4px center no-repeat;
+}
+/* ----- SYSTEM NOTICE MESSAGES ----- */
+#system-message dd.notice ul {
+	border-top: 3px solid #f0dc7e;
+	border-bottom: 3px solid #f0dc7e;
+	color: #cc0000;
+	background: #efe7b8 url(../../../../templates/system/images/notice-note.png) 4px center no-repeat;
+}
+/*--------- SYSTEM BUTTON -------------*/
+.button2-left {
+	background: none !important;
+	margin:0 !important;
+}
+.button2-left .blank {
+   background: none !important;
+}
+.button2-left a:link,
+.button2-left a:visited {
+	text-decoration: underline;
+}
+.button2-left a:hover {
+	color: #333 !important;
+	text-decoration: none;
+	-webkit-box-shadow: 0px 0px 2px #333333;
+	-moz-box-shadow: 0px 0px 2px #333333;
+	box-shadow: 0px 0px 2px #333333;
+}
+.button2-left a:link,
+.button2-left a:visited {
+	color: #333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #999999;
+	padding: 5px 8px;
+	cursor: pointer;
+	background: url(../images/bg-button.png) left bottom repeat-x;
+	display: inline-block;
+	margin: 2px 5px 5px 5px;
+	text-decoration: none;
+}
+.jsn-disabled-button a:link,
+.jsn-disabled-button a:visited{
+	color: #ACA899;
+	background: #F1F1ED;
+	cursor:default;
+}
+.jsn-disabled-button a:hover {
+	-webkit-box-shadow: 0px 0px 0px #FFF;
+	-moz-box-shadow: 0px 0px 0px #FFF;
+	box-shadow: 0px 0px 0px #FFF;
+	color: #ACA899 !important;
+}
+/*--------------- ICON - FILES INTEGRITY --------------- */
+body {
+	font-family: arial, tahoma, sans-serif;
+	font-size: 12px;
+	margin: 0;
+}
+#jsn-modified-file-list div.explain-icon {
+	padding-top: 1em;
+	text-align: center;
+	border-top: 1px solid #CCCCCC;
+	margin-right: 10px;
+}
+
+#jsn-modified-file-list div.explain-icon span {
+	font-family: arial, tahoma, sans-serif;
+	font-size: 12px;
+	padding-left: 2em;
+	padding-right: 0.5em;
+	border-right: 1px solid #CCCCCC;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+#jsn-modified-file-list div.explain-icon span.end {
+	padding-right: 0;
+	border:none;
+}
+#jsn-modified-file-list h3.jsn-element-heading {
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0 10px;
+    padding: 10px 0;
+    color: #000;
+    height: 20px;
+}
+#jsn-modified-file-list ul.list {
+	list-style: none;
+	margin: 0;
+	padding: 5px 0 0 0;
+}
+#jsn-modified-file-list ul.list li {
+	padding-left: 1.8em;
+	margin: 0.5em 0 0.5em 0.7em;
+}
+.icon-added {
+    background: url("../images/icon-added.png") no-repeat scroll left center transparent;
+}
+.icon-deleted {
+    background: url("../images/icon-deleted.png") no-repeat scroll left center transparent;
+}
+.icon-modified {
+    background: url("../images/icon-modified.png") no-repeat scroll left center transparent;
+}
+.jsn-div-scroll {
+    background: none repeat scroll 0 0 #FFFFFF;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height:245px;
+    width:560px;
+}

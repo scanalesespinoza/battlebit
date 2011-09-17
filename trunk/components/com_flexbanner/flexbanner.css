@@ -1,0 +1,11 @@
+table.fblist{ 
+ border-collapse: collapse;
+}
+table.fblist tbody tr th, table.fblist tbody tr td {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #ccc;
+    height: 25px;
+}
+
+table.fblist td, table.fblist th {
+    padding: 4px;

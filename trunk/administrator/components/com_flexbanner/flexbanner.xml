@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6" method="upgrade">
+<name>FlexBanner</name>
+<creationDate>25/08/2011</creationDate>
+<author>inch hosting</author>
+<authorEmail>admin@inchhosting.co.uk</authorEmail>
+<authorUrl>www.inchhosting.co.uk</authorUrl>
+<copyright>Copyright (c)2009-2011 inch communications ltd</copyright>
+<license>This component in released under the GNU/GPL License</license>
+<version>1.6.11</version>
+    <description><![CDATA[
+	<div align="left"><img src="components/com_flexbanner/flexbanner.png" alt="FlexBanner Logo" /></div>
+	<h2>Successfully installed FlexBanner&nbsp;Component and Module</h2>
+	FlexBanner is a powerful banner management system that allows you to choose which articles, sections or categories a banner appears on. 
+	
+	It supports the use of Flash banners and reports clicks.
+	]]></description>
+<scriptfile>script.flexbanner.php</scriptfile>
+<files folder="frontend">
+	<filename>flexbanner.class.php</filename>
+	<filename>flexbanner.css</filename>
+	<filename>flexbanner.html.php</filename>
+	<filename>flexbanner.php</filename>
+	<filename>index.html</filename>
+	<filename>images/publish.png</filename>
+	<filename>images/publish_f2.png</filename>
+	<filename>images/publish_g.png</filename>
+	<filename>images/publish_r.png</filename>
+	<filename>images/publish_x.png</filename>
+	<filename>images/publish_y.png</filename>
+	<filename>images/index.html</filename>
+	<filename>views/index.html</filename>
+	<filename>views/client/index.html</filename>
+	<filename>views/client/tmpl/index.html</filename>
+	<filename>views/client/tmpl/default.xml</filename>
+
+</files>
+ <languages folder="language_front">
+	<language tag="en-GB">en-GB.com_flexbanner.ini</language>
+ </languages>
+
+<install>
+	<sql>
+		<file charset="utf8" driver="mysql">install.sql</file>
+	</sql>
+</install>
+<uninstall>
+	<sql>
+		<file charset="utf8" driver="mysql">uninstall.sql</file>
+	</sql>
+</uninstall>
+<administration>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.com_flexbanner.ini</language>
+		<language tag="en-GB">en-GB.com_flexbanner.sys.ini</language>
+	</languages>
+
+	<!-- Administration menu -->
+	<menu img="components/com_flexbanner/flexbanner-16.png">FlexBanner</menu>
+
+		<submenu>
+			<menu link="option=com_flexbanner" view="FlexBanner" img="components/com_flexbanner/flexbanner-16.png"
+				alt="FlexBanner/FlexBanner">COM_FLEXBANNER_MENU_BANNERS</menu>
+			<menu link="option=com_flexbanner&amp;task=listClients" view="FlexBanner" img="components/com_flexbanner/flexbanner-16.png"
+				alt="FlexBanner/FlexBanner">COM_FLEXBANNER_MENU_CLIENTS</menu>
+			<menu link="option=com_flexbanner&amp;task=listLinks" view="FlexBanner" img="components/com_flexbanner/flexbanner-16.png"
+				alt="FlexBanner/FlexBanner">COM_FLEXBANNER_MENU_LINKS</menu>
+			<menu link="option=com_flexbanner&amp;task=listLocations" view="FlexBanner" img="components/com_flexbanner/flexbanner-16.png"
+				alt="FlexBanner/FlexBanner">COM_FLEXBANNER_MENU_LOCATIONS</menu>
+			<menu link="option=com_flexbanner&amp;task=listSizes" view="FlexBanner" img="components/com_flexbanner/flexbanner-16.png"
+				alt="FlexBanner/FlexBanner">COM_FLEXBANNER_MENU_SIZES</menu>
+	</submenu>
+
+	<files folder="backend">
+		<filename>admin.flexbanner.html.php</filename>
+		<filename>admin.flexbanner.php</filename>
+		<filename>flexbanner.css</filename>
+		<filename>flexbanner.png</filename>
+		<filename>flexbanner-16.png</filename>
+		<filename>index.html</filename>
+		<filename>install.sql</filename>
+		<filename>toolbar.flexbanner.html.php</filename>
+		<filename>toolbar.flexbanner.php</filename>
+		<filename>uninstall.flexbanner.php</filename>
+		<filename>uninstall.sql</filename>
+		<filename>models/fields/flexbannerlocation.php</filename>
+		<filename>models/fields/flexbannerlocation_lang.php</filename>
+		<filename>models/fields/index.html</filename>
+		<filename>help/en-GB/screen.flexbanner.html</filename>
+		<filename>help/en-GB/index.html</filename>
+	</files>
+</administration>
+</extension>
