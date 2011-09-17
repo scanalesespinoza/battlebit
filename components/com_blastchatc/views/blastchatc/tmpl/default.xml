@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+		<layout title="COM_BLASTCHATC_BLASTCHATC_VIEW_DEFAULT_TITLE">
+			<message>COM_BLASTCHATC_BLASTCHATC_VIEW_DEFAULT_DESC</message>
+		</layout>
+	  <fields name="params">
+	
+	      <!-- Basic options. -->
+	      <fieldset name="params"
+	         label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS"
+	      >
+					<field
+						name="type"
+						type="list"
+						label="COM_BLASTCHATC_BLASTCHATC_FIELD_TYPE_LABEL"
+						description="COM_BLASTCHATC_BLASTCHATC_FIELD_TYPE_DESC"
+						default=""
+					>
+						<option value="">JGLOBAL_USE_GLOBAL</option>
+						<option value="chat">COM_BLASTCHATC_BLASTCHATC_FIELD_TYPE_CHAT</option>
+						<option value="shout">COM_BLASTCHATC_BLASTCHATC_FIELD_TYPE_SHOUTBOX</option>
+					</field>
+					<field
+						name="intf"
+						type="list"
+						label="COM_BLASTCHATC_BLASTCHATC_FIELD_INTERFACE_LABEL"
+						description="COM_BLASTCHATC_BLASTCHATC_FIELD_INTERFACE_DESC"
+						default=""
+					>
+						<option value="">JGLOBAL_USE_GLOBAL</option>
+						<option value="st">COM_BLASTCHATC_BLASTCHATC_FIELD_INTERFACE_STANDARD</option>
+						<option value="vi">COM_BLASTCHATC_BLASTCHATC_FIELD_INTERFACE_IMPAIRED</option>
+						<option value="md">COM_BLASTCHATC_BLASTCHATC_FIELD_INTERFACE_MOBILE</option>
+					</field>
+					<field
+						name="rid"
+						type="text"
+						label="COM_BLASTCHATC_BLASTCHATC_FIELD_RID_LABEL"
+						description="COM_BLASTCHATC_BLASTCHATC_FIELD_RID_DESC"
+						default=""
+					>
+					</field>
+					<field
+						name="width"
+						type="text"
+						label="COM_BLASTCHATC_BLASTCHATC_FIELD_WIDTH_LABEL"
+						description="COM_BLASTCHATC_BLASTCHATC_FIELD_WIDTH_DESC"
+						default="100%"
+					>
+					</field>
+					<field
+						name="height"
+						type="text"
+						label="COM_BLASTCHATC_BLASTCHATC_FIELD_HEIGHT_LABEL"
+						description="COM_BLASTCHATC_BLASTCHATC_FIELD_HEIGHT_DESC"
+						default="480"
+					>
+					</field>
+					<field
+						name="frame_border"
+						type="list"
+						label="COM_BLASTCHATC_BLASTCHATC_FIELD_FRAMEBORDER_LABEL"
+						description="COM_BLASTCHATC_BLASTCHATC_FIELD_FRAMEBORDER_DESC"
+						default=""
+					>
+						<option value="">JGLOBAL_USE_GLOBAL</option>
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+					</field>
+					<field
+						name="mwidth"
+						type="text"
+						label="COM_BLASTCHATC_BLASTCHATC_FIELD_MWIDTH_LABEL"
+						description="COM_BLASTCHATC_BLASTCHATC_FIELD_MWIDTH_DESC"
+						default="0"
+					>
+					</field>
+					<field
+						name="mheight"
+						type="text"
+						label="COM_BLASTCHATC_BLASTCHATC_FIELD_MHEIGHT_LABEL"
+						description="COM_BLASTCHATC_BLASTCHATC_FIELD_MHEIGHT_DESC"
+						default="0"
+					>
+					</field>
+	      </fieldset>
+	
+	      <!-- Form options. -->
+	      <!--
+	      <fieldset name="Some New Fieldset"
+	         label="TPL_TPLNAME_NEWFIELDSET_LABEL"
+	      >
+	
+					<field
+						name="blah"
+						type="checkbox"
+						label="COM_BLASTCHATC_BLASTCHATC_FIELD_DETACHED_LABEL"
+						description="COM_BLASTCHATC_BLASTCHATC_FIELD_DETACHED_DESC"
+						default="0"
+					>
+					</field>
+	
+	      </fieldset>
+	      -->
+	   </fields>
+</metadata>

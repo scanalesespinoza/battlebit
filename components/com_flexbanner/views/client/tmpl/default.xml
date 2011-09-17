@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_FLEXBANNER_MENU_FRONTCLIENTS" option="com_flexbanner_form_view_default_option" >
+        <message>
+            <![CDATA[This layout shows Client Statistics.]]>
+        </message>
+	</layout>
+    <state>
+        <name>Client Statistics</name>
+        <description>This layout shows Client Statistics.</description>
+        <url addpath="/administrator/components/com_flexbanner/elements">
+            <param name="task" type="hidden" default="client" />
+        </url>
+    </state>
+</metadata>

@@ -1,0 +1,80 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2008 - 2011 JoomlaShine.com. All rights reserved.
+* @license   GNU/GPL v2 http://www.gnu.org/licenses/gpl-2.0.html
+*/
+/* ============================== LAYOUT ============================== */
+/* =============== LAYOUT - GENERAL LAYOUT =============== */
+.clearafter,
+div.jsn-modulescontainer,
+div.jsn-modulescontainer2,
+div.jsn-modulescontainer3,
+div.jsn-modulescontainer4,
+div.jsn-modulescontainer5,
+div.jsn-modulescontainer6 {
+	height: 1%;
+}
+/* =============== LAYOUT - HEADER AREA =============== */
+#jsn-header {
+	height: 1%;
+}
+#jsn-logo a img {
+	display: block;
+}
+/* =============== LAYOUT - MENU AREA =============== */
+#jsn-menu {
+	height: 1%;
+}
+/* =============== LAYOUT - CONTENT TOP AREA =============== */
+#jsn-content-top {
+	height: 1%;
+}
+/* =============== LAYOUT - CONTENT AREA =============== */
+#jsn-content,
+#jsn-maincontent,
+#jsn-maincontent_inner,
+#jsn-maincontent_inner1,
+#jsn-maincontent_inner2,
+#jsn-maincontent_inner3,
+#jsn-maincontent_inner4,
+#jsn-centercol,
+#jsn-pos-innerleft,
+#jsn-leftsidecontent {
+	height: 1%;
+}
+#jsn-content,
+#jsn-maincontent_inner1,
+#jsn-maincontent_inner2,
+#jsn-maincontent_inner3,
+#jsn-maincontent_inner4 {
+	width: 100%;
+}
+/* ============================== MENU ============================== */
+/* =============== MENU - MAIN MENU =============== */
+/* ----- GENERAL ----- */
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li {
+	position: relative;
+}
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu ul {
+	margin-right: -100%;
+}
+/* =============== MENU - TREE MENU =============== */
+/* ----- GENERAL ----- */
+div.jsn-modulecontainer ul.menu-treemenu li {
+	height: 1%;
+}
+/* =============== MENU - TOP MENU =============== */
+/* ----- GENERAL ----- */
+ul.menu-topmenu li {
+	display: inline;
+}
+/* ============================== MODULE STYLES ============================== */
+#jsn-pos-top div.search {
+	float: none;
+}
+div.jsn-modulecontainer {
+	height: 1%;
+}
+#jsn-body div.jsn-modulecontent {
+	height: 1%;
+}

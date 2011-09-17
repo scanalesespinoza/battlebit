@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="1.6" type="template" method="upgrade">
+	<name>World_of_Warcraft_3_Flash-j1.6</name>
+	<creationDate>Jan 2011</creationDate>
+	<author>Juergen Koller</author>
+	<copyright>Copyright LernVid.com</copyright>
+	<authorEmail>webmaster@lernvid.com</authorEmail>
+	<authorUrl>http://www.lernvid.com</authorUrl>
+	<version>5.0</version>
+	<description>
+		&lt;h1&gt;World of Warcraft 3 Flash - Template for Joomla 1.6&lt;/h1&gt;
+		&lt;a href="http://www.lernvid.com" target="_blank"&gt;Authors Homepage&lt;/a&gt;&lt;br /&gt;
+		&lt;a href="http://www.lernvid.com/lizenz" target="_blank"&gt;Licence Information&lt;/a&gt;&lt;br /&gt;
+		&lt;img src="../templates/world_of_warcraft_3_flash-j1.6/template_thumbnail.png" style="float:left; padding:10px 10px 10px 0;" /&gt;
+		&lt;script src='../templates/world_of_warcraft_3_flash-j1.6/jscolor/jscolor.js' type='text/javascript'&gt;&lt;/script&gt;
+	</description>
+	<files>
+		<folder>css</folder>
+		<folder>fl</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>jscolor</folder>
+		<filename>favicon.ico</filename>
+		<filename>head_includes.php</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>template_thumbnail.png</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="spacer1" type="spacer" label="&lt;h1&gt;Welcome to your Template Configuration!&lt;/h1&gt; &lt;h3&gt;Hover the Parameter Names to get some help...&lt;/h3&gt;" />
+				<field hr="true" type="spacer" />
+				<field type="spacer" label="&lt;h2&gt;Flash Effects&lt;/h2&gt;" />
+				<field name="useFlashHeader" type="radio" default="1" label="Use IMBA Flash Header?" description="Here you can on / off the IMBA Flash Header xD">
+				  <option value="1">Yes</option>
+				  <option value="0">No</option>
+				</field>
+				<field hr="true" type="spacer" />
+				<field type="spacer" label="&lt;h2&gt;Guild Name&lt;/h2&gt;" />
+				<field name="showGuildName" type="radio" default="1" label="Show Guild Name in Header?" description="Here you can on / off the Guild Name in your Header. An Alternate to this Guild Name is that you can edit the .psd file included in the Download. .psds can be opened and edited with Photoshop, Fireworks or Gimp">
+				  <option value="1">Yes</option>
+				  <option value="0">No</option>
+				</field>
+				<field name="GuildName" type="textarea" rows="1" cols="40" default="Guild Name" label="Guild Name" description="Enter the Name of your Guild, Fansite or Community"></field>
+				<field name="FontSize" type="text" default="26" label="Guild Name Font Size" description="Default = 26 Font Size of the Guild Name in Pixel - Just play a bit with this to find out your best setting."></field>
+				<field name="FontColor" type="text" default="FF8C00" class="color" label="Guild Name Color" description="Default: FF8C00 = Orange | Color of the Guild Name in Hexacode"></field>
+				<field hr="true" type="spacer" />
+				<field type="spacer" label="&lt;h2&gt;Copyright text&lt;/h2&gt;" />
+				<field name="CopyrightInfo" type="textarea" rows="3" cols="50" default="Copyright my World of Warcraft Guild" label="CopyrightInfo in the Footer" description="Here you can enter a copright description that will be visible in the bottom of the page. - You can also add an image with with html code"></field>
+			</fieldset>
+		</fields>
+	</config>
+	<positions>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>wow3-slider</position>
+		<position>debug</position>
+	</positions>
+</extension>

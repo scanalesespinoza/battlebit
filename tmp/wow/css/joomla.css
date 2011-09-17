@@ -1,0 +1,979 @@
+﻿/*********************************************
+*** Designed by Juergen Koller			   ***
+*** Designers Home: http://www.LernVid.com ***
+**********************************************/
+
+
+
+
+/****************** Blog Cols ******************/
+
+.cols-1	{
+        display: block;
+        float: none !important;
+        margin: 0 !important;
+}
+.cols-2 .column-1 {
+        width:46%;
+        float:left;
+}
+.cols-2 .column-2 {
+        width:46%;
+        float:right;
+        margin:0
+}
+.cols-3 .column-1 {
+        float:left;
+        width:29%;
+        padding:0px 5px;
+        margin-right:4%
+
+}
+.cols-3 .column-2 {
+        float:left;
+        width:29%;
+        margin-left:0;
+        padding:0px 5px
+}
+.cols-3 .column-3 {
+        float:right;
+        width:29%;
+        padding:0px 5px
+}
+.items-row {
+        overflow:hidden;
+        margin-bottom:10px !important;
+}
+.column-1,
+.column-2,
+.column-3 {
+        padding:10px 5px
+}
+.column-2 {
+        width:55%;
+        margin-left:40%;
+}
+.column-3 {
+        width:30%
+}
+.blog-more {
+        padding:10px 5px
+}
+
+/****************** System TOOLTIPS ******************/
+.tip-wrap {
+	float : left;
+	background-color : #202020;
+	border-top: 1px solid #444;
+	border-left: 1px solid #444;
+	border-right: 1px solid #555;
+	border-bottom: 1px solid #555;
+	padding : 7px 9px;
+	z-index: 13000;
+	max-width:300px;
+}
+.tip-title {
+	color: #fff;
+	font-weight:bold;
+	font-size:12px;
+}
+.tip-text {
+	color: #999;
+	font-size:11px;
+	font-weight: normal;
+	margin : 0;
+}
+
+/****************** PAGENAV ******************/
+input.button,
+button.button, .pagenav, button.validate {
+	font-size:11px;
+	text-align : center;
+	padding : 2px 5px !important;
+}
+#maincontent ul.pagenav {
+	list-style-type:none;
+	padding:0;
+	overflow:hidden;
+	border: 0;
+	background:none;
+}
+ul.pagenav {
+	display:inline-block;
+	margin-top:20px;
+	width:99%;
+}
+ul.pagenav li {
+	display:inline-block;
+	padding:0px;
+	margin:0;
+}
+#maincontent ul.pagenav li {
+	line-height:2em
+}
+ul.pagenav li a	{
+	display:inline; 
+	text-decoration:none;
+	padding : 2px 5px !important;
+}
+ul.pagenav li.pagenav-prev {
+	float:left
+}
+ul.pagenav li.pagenav-next {
+	float:right
+}
+
+/****************** PAGENATION ******************/
+
+#maincontent .pagination {
+        margin:10px 0 ;
+        padding:10px 0 10px 0px;
+}
+#maincontent .pagination ul {
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        text-align:left;
+}
+#maincontent .pagination li {
+        display:inline;
+        padding:2px 5px;
+        text-align:left;
+        margin:0 2px
+}
+#maincontent .pagination li.pagination-start,
+#maincontent .pagination li.pagination-next,
+#maincontent .pagination li.pagination-end,
+#maincontent .pagination li.pagination-prev {
+	border:0
+}
+#maincontent .pagination li.pagination-start ,
+#maincontent .pagination li.pagination-start  span {
+	padding:0
+}
+p.counter {
+	font-weight:bold;
+	text-align:right;
+}
+
+/****************** PRINT-EMAIL ******************/
+
+#maincontent ul.actions
+{
+        text-align:right;
+        padding:0 ;
+        width:100%;
+        margin:0
+}
+#maincontent ul.actions li
+{
+        display:inline
+}
+
+#maincontent ul.actions a
+{
+        text-decoration:none
+}
+
+/* vote */
+span.content_rating,span .content_vote {
+	display:block;
+}
+
+.contentheading {
+	font-size: 20px;
+	height : 30px;
+	line-height : 30px;
+	color: #e43f19;
+	background-image : url(../images/contentheading.gif);
+	background-repeat: no-repeat;
+	padding-left: 35px;
+	margin: 30px 0 30px 0;
+	font-weight:normal;
+}
+.contentheading a {
+	color: #e43f19;
+}
+/****************** ARTICLE INFOS ******************/
+
+.article-detailer {
+	font-weight:bold;
+	background-image:url('../images/article-detailer.png');
+	background-repeat:no-repeat;
+    padding-left:20px;
+    display:block;
+	letter-spacing:2px;
+}
+.article-detailer:hover {
+	letter-spacing:5px;
+}
+.article-info {
+        margin:10px 0 10px 0px;
+        font-size:11px;
+        padding-left: 20px;
+}
+.article-info-term {
+        display:none
+}
+dd.parent-category-name,
+dd.category-name,
+dd.create,
+dd.modified,
+dd.published,
+dd.createdby,
+dd.hits {
+    min-height:16px;
+    line-height:16px;
+	background-repeat:no-repeat;
+}
+.archive .article-info dd,
+.article-info dd {
+        margin:2px 0 0px 0;
+        line-height:1.2em
+}
+dd.createdby {
+
+}
+.article-info dd span {
+    text-transform:none;
+    display:inline-block;
+    padding:0 5px 0 0px;
+    margin:0 10px 0 0px;
+}
+
+/****************** CATEGORIES LIST ******************/
+#maincontent .categories-listalphabet ul {
+	padding:0;
+	margin:20px 10px 10px 0;
+	list-style-type:none;
+	list-style-position:inside
+}
+#maincontent .categories-listalphabet ul li {
+	display :inline;
+	padding:5px;
+	border-right:solid 1px #ddd
+}
+#maincontent .categories-list ul {
+	list-style-type:none;
+	margin:0
+}
+#maincontent .cat-children{
+	padding-left:5px;
+}
+#maincontent .cat-children ul dl dt,
+#maincontent .cat-children ul dl dd,
+#maincontent dl.article-count dt,
+#maincontent dl.article-count dd {
+	display:inline;
+}
+#maincontent dl.article-count dd {
+	margin:0;
+}
+#maincontent .cat-children ul {
+	list-style-type :none;
+	margin:0;
+	padding:0;
+}
+#maincontent .cat-children ul {
+	margin:20px 20px 20px 0;
+}
+#maincontent .cat-children ul ul{
+	margin:20px	
+}
+
+#maincontent .cat-children ul li {
+	margin:10px 0 10px 0
+}
+
+
+/****************** TABLES ******************/
+
+table {
+        border-collapse:collapse
+}
+table.weblinks,
+table.category {
+        font-size:1em;
+        margin:10px 10px 20px 0px;
+        width:99%;
+}
+table.weblinks td {
+        border-collapse:collapse;
+}
+table.weblinks td,
+table.category td {
+        padding:7px;
+}
+table.weblinks th,
+table.category th {
+        padding:7px;
+        text-align:left
+}
+
+td.num {
+        vertical-align:top;
+        text-align:left;
+}
+td.hits {
+        vertical-align:top;
+        text-align:center
+}
+td p {
+        margin:0;
+        line-height:1.3em
+}
+.filter {
+        margin:10px 0
+}
+.display-limit,
+.filter {
+        text-align:right;
+        margin-right:7px
+}
+
+
+
+/****************** CATEGORY TABLE ******************/
+
+table.category th a img {
+        padding:2px 10px
+}
+.filter-search {
+        float:left;
+}
+.filter-search .inputbox{width:6em;}
+legend.element-invisible {
+        position:absolute;
+        margin-left:-3000px;
+        margin-top:-3000px;
+        height:0px;
+}
+.cat-items {
+        margin-top:20px
+}
+/* contact */
+#main .contact h3 {
+	border-bottom:solid 1px #ddd;
+	margin: 20px 0
+}
+.form-required {
+	font-weight:bold;
+	margin:10px 0;
+	background-color:#000;
+	background-position:10px;
+	padding:10px 50px;
+}
+.contact .inputbox {
+	border:solid 1px #ccc;
+	padding:3px
+}
+
+/* contact  slider */
+
+.panel {
+	border:solid 1px #333;
+	margin-top:-1px
+
+}
+#main .contact .panel h3 {
+	margin:0px 0 0px 0;
+	padding: 0;
+	background:#eee;
+	border:0
+}
+.panel h3 a {
+	display:block;
+	padding:6px;
+	text-decoration:none;
+	color:#444;
+	padding:6px;
+}
+.panel h3.pane-toggler a {
+	background:#f5f5f5 url(../images/slider_plus.png) right  top no-repeat;
+}
+.panel h3.pane-toggler-down a {
+	background:#f5f5f5  url(../images/slider_minus.png) right  top no-repeat;
+	border-bottom:solid 1px #ddd;
+}
+
+.pane-slider {
+	border:solid 0px;
+	padding:0px 10px !important;
+	margin:0;
+	background: url(../images/nav_level_1.gif) repeat-x ;
+}
+
+.panel .contact-form,
+.panel  .contact-miscinfo {
+	padding:10px
+}
+
+.contact .panel .contact-form form,
+.contact .panel .contact-address {
+	margin:20px 0 0 0
+}
+
+/* tabs */
+
+div.current {
+	background: url(../images/nav_level_1.gif) repeat-x ;
+}
+
+
+/******************** contacts ********************/
+
+.contact {
+	padding:0 5px
+}
+.contact-category {
+        padding:0 10px
+}
+.contact-category  #adminForm fieldset.filters {
+	border:0;
+	padding:0
+}
+.contact-image {
+	margin:10px 0;
+	overflow:hidden;
+}
+.contact-image img {
+	float:right;
+}
+address {
+        font-style:normal;
+        margin:10px 0;       
+}
+
+address spa {
+        display:block
+}
+.contact-address {
+	margin:20px 0 10px 0;
+}
+.contact-email div {
+        padding:2px 0;
+        margin:0 0 10px 0;
+}
+.contact-email label {
+        width:17em;
+        float:left;
+}
+span.contact-image {
+    margin-bottom:10px;
+    overflow:hidden;
+    display:block
+}
+#contact-textmsg
+{padding: 2px 0 10px 0}
+
+#contact-email-copy {
+        float:left;
+        margin-right:10px;
+}
+.contact .button {
+        float:none !important;
+        clear:left;
+        display:block;
+        margin:20px 0 0 0
+}
+dl.tabs {
+    float: left;
+    margin: 50px 0 0 0;
+    z-index: 50;
+    clear:both;
+}
+dl.tabs dt {
+    float: left;
+    padding: 4px 10px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    margin-right: 3px;
+    background: #f0f0f0;
+    color: #666;
+}
+dl.tabs dt.open {
+    background: #F9F9F9;
+    border-bottom: 1px solid #F9F9F9;
+    z-index: 100;
+    color: #555;
+
+}
+div.current {
+    clear: both;
+    border: 1px solid #ccc;
+    padding: 10px 10px;
+    max-width: 500px;
+}
+div.current dd {
+    padding: 0;
+    margin: 0;
+}
+dl#content-pane.tabs {
+    margin: 1px 0 0 0;
+}
+
+/* tables   */
+
+table.weblinks th,
+table.newsfeeds th,
+table.category th,
+table.jlist-table th {
+	background:#222 ;
+}
+
+table.weblinks th a,
+table.newsfeeds th a,
+table.category th a,
+table.jlist-table th a,
+table.weblinks th,
+table.newsfeeds th,
+table.category th,
+table.jlist-table th {
+	color:#555
+}
+table.category th a img {
+	border:solid 0px ;
+}
+#main table.moduletable td,
+#main table.moduletable tr
+{border:0;}
+fieldset.filters {
+	border:solid 0px #ddd;
+
+}
+
+/* login  */
+
+#login-form {
+        padding-top:5px
+}
+#login-form ul {
+        padding:15px
+}
+#login-form fieldset {
+	padding:0px;
+	border:0;  	
+}
+#login-form fieldset.input {
+	padding:10px 0 0 0;
+	margin:0px 0 10px 5px
+}
+#login-form label {
+	margin-right:10px;
+	width:8.4em;
+	display:block;
+	float:left
+}
+#form-login-remember label {
+	float:none;
+	width:auto;
+	display:inline
+}
+fieldset.input {
+	border:0 ;
+}
+#modlgn-username,
+#modlgn-passwd {
+	width:9em
+}
+.module_content #form-login-username label,
+.module_content #form-login-password label {
+	float:left;
+	width:5.2em
+}
+.login-fields {
+    margin:10px 0
+}
+.login-fields label {
+    float:left;
+    width:9em
+}
+.login-description img,
+.logout-description img {
+    float:left;
+    margin-right:20px
+}
+.login-description,
+.logout-description {
+	overflow:hidden;
+	padding-left:5px;
+	margin:20px 0 10px 0
+}
+
+.logout-description {
+	margin-bottom:20px
+}
+
+/* forms */
+
+#member-registration {
+        padding:0 5px
+}
+#member-registration fieldset {
+border:solid 1px #ddd
+}
+
+form fieldset dt {
+        clear:left;
+        float:left;
+        width:12em;
+        padding:3px 0
+}
+
+form fieldset dd {
+        float:left;
+        padding:3px 0
+}
+
+/* form validation  */
+
+.invalid {
+	border-color:red !important;
+}
+
+label.invalid {
+	color:red;
+}
+
+
+/* user profile  */
+#users-profile-core,
+#member-profile 
+#users-profile-custom {
+	border:solid 1px #ccc;
+}
+fieldset {
+	border:solid 1px #ccc;
+}
+
+/* user profile  */
+
+#users-profile-core,
+#users-profile-custom {
+        margin:10px 0 15px 0;
+        padding:15px;
+}
+#users-profile-core dt,
+#users-profile-custom dt {
+        float:left;
+        width:10em;
+        padding:3px 0
+}
+#users-profile-core dd,
+#users-profile-custom dd {
+        padding:3px 0
+}
+#member-profile fieldset,
+.registration fieldset {
+        margin:10px 0 15px 0;
+        padding:15px;
+}
+#users-profile-core legend,
+.profile-edit legend,
+.registration legend {
+		font-weight:bold
+}
+
+/* search */
+.searchintro {
+        font-weight:normal;
+        margin:20px 0 20px;
+}
+#searchForm {
+        padding:0 5px
+}
+.form-limit {
+        margin:20px 0 0;
+        text-align:right;
+        padding:0 10px 0 20px;
+}
+.highlight {
+        font-weight:bold;
+}
+.ordering-box {
+        width:40%;
+        float:right;
+}
+.phrases-box {
+        width:60%;
+        float:left
+}
+.only,
+.phrases {
+        margin:10px 0 0 0px;
+        padding:15px ;
+        line-height:1.3em;
+}
+label.ordering {
+        display:block;
+        margin:10px 0 10px 0
+}
+.word {
+        padding:10px 10px 10px 0;
+}
+.word input {
+        font-weight:bold;
+        margin:1px 1px 1px 10px;
+        padding:3px;
+}
+.word input:focus {
+        margin:0 0 0 9px;
+}
+
+.word label {
+    font-weight:bold
+}
+fieldset.only label,
+fieldset.phrases label {
+    margin:0 10px 0 0px
+}
+.ordering-box label.ordering {
+    margin:0 10px 5px 0;
+    float:left
+}
+form .search label {
+        display:none
+}
+
+/* selects  */
+.phrases .inputbox {
+        width:10em;
+}
+.phrases .inputbox option {
+        padding:2px;
+}
+
+/* search results  */
+
+dl.search-results dt.result-title {
+        padding:15px 15px 0px 5px;
+        font-weight:bold;
+}
+
+dl.search-results dd {
+        padding:2px 15px 2px 5px
+}
+
+dl.search-results dd.result-text {
+        padding:10px 15px 10px 5px;
+        line-height:1.7em
+}
+
+dl.search-results dd.result-created {
+        padding:2px 15px 15px 5px
+}
+
+dl.search-results dd.result-category S{
+	 padding:10px 15px 5px 5px
+}
+.highlight {
+	background:#fff;
+	color: red;
+	font-weight:bold;
+	padding:2px;
+}
+/* editor  */
+
+.contentpaneopen_edit img {
+	border:0
+}
+
+form.editor fieldset {
+	border:solid 1px #ccc;
+}
+
+
+/* edit  */
+
+form#adminForm {
+	border:solid 0px #000
+}
+
+.edit form#adminForm fieldset {
+	border:solid 1px #ddd
+}
+.edit form#adminForm  legend {
+	font-weight:bold
+}
+/* edit */
+legend {
+        padding:3px 5px;
+}
+.edit form#adminForm fieldset {
+        padding:20px 15px;
+        margin:10px 0 15px 0;
+}
+
+.formelm {
+        margin:5px 0
+}
+
+
+.formelm label {
+        width:13em;
+        display:inline-block;
+        vertical-align:top;
+}
+
+form#adminForm .formelm-area {
+        padding:5px 0
+}
+
+form#adminForm .formelm-area label {
+        vertical-align:top;
+        display:inline-block;
+        width:7.9em
+}
+
+.formelm-buttons {
+        text-align:right;
+        margin-bottom:10px
+}
+a.modal-button,
+.button2-left .blank a,
+.button2-left a,
+.button2-left div.readmore a {
+	background:#eee;
+	padding:4px !important;
+	margin:0 !important;
+	line-height:1.2em; border:solid 1px #ddd;
+	font-weight:bold; text-decoration:none;
+	margin-top:10px !important
+}
+
+/* -- buttons */
+#editor-xtd-buttons {
+        padding: 0px;
+}
+
+.button2-left,
+.button2-right,
+.button2-left div,
+.button2-right div {
+        float: left;
+}
+
+.button2-left a,
+.button2-right a,
+.button2-left span,
+.button2-right span {
+        display: block;
+
+        float: left;
+
+
+        color: #666;
+        cursor: pointer;
+}
+
+.button2-left span,
+.button2-right span {
+        cursor: default;
+        color: #999;
+}
+
+.button2-left .page a,
+.button2-right .page a,
+.button2-left .page span,
+.button2-right .page span {
+        padding: 0 6px;
+}
+
+.page span {
+        color: #555;
+        font-weight: bold;
+}
+
+.button2-left a:hover,
+.button2-right a:hover {
+        text-decoration: none;
+        color: #0B55C4;
+}
+
+.button2-left a,
+.button2-left span {
+        padding: 0 24px 0 6px;
+}
+
+.button2-right a,
+.button2-right span {
+        padding: 0 6px 0 24px;
+}
+
+.button2-left {
+       
+        float: left;
+        margin-left: 5px;
+}
+
+.button2-right {
+       
+        float: left;
+        margin-left: 5px;
+}
+
+  /* mod stats  */
+.stats-module dl {
+	margin:10px 0 10px 0;
+}
+.stats-module dt {
+	float:left;
+    margin:0 10px 0 0;
+    font-weight: bold;
+}
+.stats-module dt,   .stats-module dd{
+	padding:2px 0 2px 0; 
+}
+
+/****************** GLOBAL THINGS ******************/
+
+#maincontent ul li,
+#maincontent ol li {
+        padding:0;
+        line-height:1.7em;
+        margin: 0;
+}
+
+.category-desc {
+        line-height:1.7em;
+        margin:10px 0;
+        padding-left:0px
+}
+.image-left {
+        float:left;
+        margin:0 15px 5px 0;
+}
+
+.image-right {
+        float:right;
+        margin:0 0 5px 15px
+}
+fieldset {
+	border:0;
+}
+
+dl#system-message {
+	font-weight:bold;
+	font-size:15px;
+}
+dl#system-message dt.error {
+	color: red;
+}
+#mailto-window{
+	width:950px;
+	margin:0 auto;
+	padding:20px;
+}
+input.button, button.button, button.validate, .pagenav, ul.pagenav li a {
+	color: #555;
+	background-color: #111;
+	border: 1px solid #444;
+	background-image:url('../images/button_bg.gif');
+	background-repeat:repeat-x;
+}
+.input, .inputbox {
+	color: #555;
+	background-color: #050505;
+	border: 1px solid #444;
+}

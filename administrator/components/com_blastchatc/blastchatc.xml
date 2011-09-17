@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+	<name>COM_BLASTCHATC</name>
+	<creationDate>July 2011</creationDate>
+	<author>BlastChat</author>
+	<authorEmail>support@blastchat.com</authorEmail>
+	<authorUrl>http://www.blastchat.com</authorUrl>
+	<copyright>2004-2011 BlastChat. All rights reserved.</copyright>
+	<license>GNU/GPL, see LICENSE.php</license>
+	<version>3.6</version>
+	<description>COM_BLASTCHATC_DESCRIPTION</description>
+	
+	<scriptfile>script.php</scriptfile>
+	
+	<files folder="site">
+    <filename>index.html</filename>
+    <filename>api.blastchatc.php</filename>
+    <filename>blastchatc.php</filename>
+    <filename>controller.php</filename>
+    <filename>COPYRIGHT.php</filename>
+    <filename>LICENSE.php</filename>
+    <folder>js</folder>
+    <folder>views</folder>
+    <folder>language</folder>
+	</files>
+	
+	<media destination="com_blastchatc" folder="media">
+		<filename>index.html</filename>
+		<folder>images</folder>
+	</media>
+	
+	<administration>
+    <menu img="../media/com_blastchatc/images/blastchat.ico">COM_BLASTCHATC_MENU</menu>
+    <files folder="admin">
+      <filename>index.html</filename>
+      <filename>blastchatc.php</filename>
+      <filename>config.xml</filename>
+      <filename>controller.php</filename>
+	    <filename>COPYRIGHT.php</filename>
+	    <filename>LICENSE.php</filename>
+      <folder>controllers</folder>
+      <folder>helpers</folder>
+	    <folder>models</folder>
+      <folder>views</folder>
+    </files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_blastchatc.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_blastchatc.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

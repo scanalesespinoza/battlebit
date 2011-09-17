@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="system" method="upgrade">
+  <name>BoWoB Chat</name>
+  <creationDate>2010-06-03</creationDate>
+  <author>Jonatan Linares</author>
+  <authorUrl>http://www.bowob.com</authorUrl>
+  <version>3.0</version>
+  <license>GNU/GPLv3 http://www.gnu.org/copyleft/gpl.html</license>
+  <description>Chat Joomla! Integrated</description>
+  <files>
+    <filename plugin="bowobchat">bowobchat.php</filename>
+    <filename>bowob.php</filename>
+    <filename>bowob_functions.php</filename>
+    <filename>bowob_api.php</filename>
+    <filename>index.html</filename>
+  </files>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field name="bowob_app_id" type="text" default="" label="App id" description="Provided by bowob.com" />
+        <field name="bowob_server_address" type="text" default="" label="Server address" description="Provided by bowob.com" />
+      </fieldset>
+    </fields>
+  </config>
+  <scriptfile>bowobchat_install.php</scriptfile>
+  <updateservers>
+    <server type="extension" priority="1" name="BoWoB Chat Update Site">http://www.bowob.com/updatejoomla/bowobchat16.xml</server>
+  </updateservers>
+</extension>

@@ -1,0 +1,285 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2008 - 2011 JoomlaShine.com. All rights reserved.
+* @license   GNU/GPL v2 http://www.gnu.org/licenses/gpl-2.0.html
+*/
+/* ============================== DEFAULT HTML ============================== */
+/* =============== DEFAULT HTML - GENERAL STYLES =============== */
+body {
+	position: relative;
+	overflow-x: hidden;
+	text-align: right;
+}
+/* =============== DEFAULT HTML - TEXT STYLES =============== */
+pre {
+	border-left: none;
+	border-right: 5px solid #404040;
+}
+blockquote {
+	padding-left: 0;
+	padding-right: 55px;
+	background: url(../images/icons/icon-text-blockquote-rtl.png) no-repeat top right;
+}
+/* =============== DEFAULT HTML - LIST STYLES =============== */
+ul li {
+	margin-right: 1.6em;
+	margin-left: 0;
+}
+ol li {
+	margin-right: 2em;
+	margin-left: 0;
+}
+/* ============================== LAYOUT ============================== */
+#jsn-page {
+	position: relative;
+	overflow: hidden;
+}
+/* =============== LAYOUT - HEADER AREA =============== */
+#jsn-headerright {
+	right: auto;
+	left: 0;
+}
+#jsn-headerright #jsn-pos-top {
+	float: left;
+}
+#jsn-pos-top div.jsn-modulecontainer {
+	float: left;
+	margin-left: 0;
+	margin-right: 10px;
+}
+/* =============== LAYOUT - MENU AREA =============== */
+#jsn-pos-mainmenu {
+	float: right;
+	direction: ltr;
+}
+#jsn-pos-toolbar {
+	float: left;
+}
+#jsn-pos-toolbar div.jsn-modulecontainer {
+	float: left;
+	margin-right: 10px;
+	margin-left: 0;
+}
+/* =============== LAYOUT - CONTENT AREA =============== */
+#jsn-content {
+	direction: ltr;
+}
+#jsn-leftsidecontent_inner,
+#jsn-rightsidecontent_inner,
+#jsn-pos-innerleft_inner,
+#jsn-centercol_inner,
+#jsn-pos-innerright_inner {
+	direction: rtl;
+}
+div.jsn-positionscontainer2 #jsn-pos-left div.jsn-modulecontainer_inner,
+div.jsn-positionscontainer2 #jsn-pos-right-2 div.jsn-modulecontainer_inner {
+	margin-left: 0;
+	margin-right: 5px;
+}
+div.jsn-positionscontainer2 #jsn-pos-left-2 div.jsn-modulecontainer_inner,
+div.jsn-positionscontainer2 #jsn-pos-right div.jsn-modulecontainer_inner {
+	margin-right: 0;
+	margin-left: 5px;
+}
+/* =============== LAYOUT - FOOTER AREA =============== */
+#jsn-pos-bottom {
+	text-align: left;
+}
+#jsn-footer.jsn-positionscontainer2 div#jsn-footerleft {
+	float: right;
+}
+#jsn-footer.jsn-positionscontainer2 div#jsn-footerright {
+	float: left;
+}
+#jsn-footer #jsn-brand {
+	text-align: left;
+}
+/* ============================== TYPOGRAPHY ============================== */
+/* =============== TYPOGRAPHY - TEXT STYLES =============== */
+.text-dropcap:first-letter,
+.text-dropcap :first-child:first-letter {
+	float: right;
+}
+/* =============== TYPOGRAPHY - LIST STYLES =============== */
+/* ----- ARROW LIST ----- */
+ul.list-arrow li {
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 16px;
+}
+ul.list-arrow.arrow-red li {
+	background: url(../images/icons/icons-arrow-rtl.png) no-repeat right 0;
+}
+ul.list-arrow.arrow-blue li {
+	background: url(../images/icons/icons-arrow-rtl.png) no-repeat right -86px;
+}
+ul.list-arrow.arrow-green li {
+	background: url(../images/icons/icons-arrow-rtl.png) no-repeat right -172px;
+}
+/* ============================== MENU ============================== */
+/* =============== MENU - MAIN MENU =============== */
+/* ----- GENERAL ----- */
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu {
+	direction: rtl;
+}
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li {
+	margin-left: 5px;
+	margin-right: 0;
+	float: right;
+}
+/* ----- 1st LEVEL ----- */
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu ul li {
+	margin: 0;
+}
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu ul li a {
+	padding-left: 0;
+	padding-right: 10px;
+}
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu ul li a span {
+	padding-right: 0;
+	background: none;
+}
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu ul ul {
+	margin-left: 0;
+	margin-right: 184px;
+}
+/* ----- PARENT ITEMS / ADD ARROW TO ITEMS HAVE SUBLEVEL ----- */
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.parent li.parent a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.parent li.parent li.parent a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.parent li.parent li.parent li.parent a {
+	background-image: url(../images/icons/icons-arrow-rtl.png);
+	background-position: 0 -338px;
+	padding-right: 10px;
+	padding-left: 16px;
+}
+/* ----- CLEAR PARENT ITEMS / REMOVE ARROW FROM ITEMS DON'T HAVE SUBLEVEL ----- */
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.parent li.parent ul a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.parent li.parent li.parent ul a,
+#jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainmenu li.parent li.parent li.parent li.parent ul a {
+	padding-left: 10px;
+}
+/* =============== MENU - TREE MENU =============== */
+/* ----- GENERAL ----- */
+ul.menu-treemenu li a span,
+div.jsn-modulecontainer ul.menu-treemenu ul li a span {
+	padding-left: 0;
+	padding-right: 16px;
+	background-position: right -342px;
+}
+/* ----- ICON MENU STYLE ----- */
+div.jsn-modulecontainer ul.menu-treemenu.menu-iconmenu li a {
+	padding-right: 3px;
+	padding-left: 0;
+}
+/* ---------- 1st LEVEL ---------- */
+div.jsn-modulecontainer ul.menu-treemenu ul li {
+	margin-left: 0;
+	margin-right: 1em;
+}
+/* =============== MENU - DIV MENU =============== */
+ul.menu-divmenu {
+	float: right;
+}
+ul.menu-divmenu li {
+	float: right;
+}
+ul.menu-divmenu li.first {
+	border-right-width: 0;
+}
+ul.menu-divmenu li.last {
+	border-right-width: 1px;
+}
+/* ============================== JOOMLA! DEFAULT EXTENSIONS ============================== */
+/* =============== JOOMLA! EXTENSIONS - COM_CONTENT =============== */
+/* ----- ARTICLE TOOLBAR ----- */
+#article-index {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+/* ----- ARTICLE INFO ----- */
+.author,
+.createdate,
+.publishdate {
+	padding-right: 20px;
+	padding-left: 0;
+}
+.author {
+	background-position: right 0;
+}
+.createdate,
+.publishdate {
+	background-position: right -86px;
+}
+.modifydate {
+	text-align: left;
+}
+/* ----- 3 BUTTON PDF, PRINT, EMAIL CONTAINER ----- */
+ul.jsn-article-tools {
+	float: left;
+	margin-right: 0;
+	margin-left: 5px;
+}
+ul.jsn-article-tools li {
+	margin-left: 0;
+	margin-right: 10px;
+}
+/* ----- TABLE OF CONTENT ----- */
+table.contenttoc {
+	margin-left: 0;
+	margin-right: 1em;
+	float: left;
+}
+/* ----- CATEGORY LIST LAYOUT ----- */
+/* TABLE FILTER */
+.jsn-infofilter {
+	text-align: left;
+}
+.jsn-titlefilter {
+	float: right;
+}
+.archived-article-list .jsn-infofilter {
+	text-align: right;
+}
+/* =============== JOOMLA! EXTENSIONS - SYSTEM MESSAGES =============== */
+/* ----- SYSTEM STANDARD MESSAGES ----- */
+#system-message dd.message ul {
+	padding-left: 0;
+	padding-right: 40px;
+	background-position: 98% center;
+}
+#system-message ul li {
+	margin-right: 0;
+}
+/* ----- SYSTEM ERROR MESSAGES ----- */
+#system-message dd.error ul {
+	background-position: 98% center;
+}
+/* ----- SYSTEM NOTICE MESSAGES ----- */
+#system-message dd.notice ul {
+	background-position: 98% center;
+}
+/* =============== JOOMLA! EXTENSIONS - MOD_BREADCRUMB =============== */
+span.breadcrumbs a,
+span.breadcrumbs span {
+	background: url(../images/icons/icons-arrow-rtl.png) no-repeat 0 -256px;
+	padding-right: 0;
+	padding-left: 18px;
+	float: right;
+}
+/* =============== JOOMLA! EXTENSIONS - MODULE SEARCH =============== */
+#jsn-pos-top div.search {
+	margin-left: 0;
+	margin-right: 6px;
+	float: left;
+}
+#jsn-pos-top div.search input#mod_search_searchword {
+	background-position: right -170px;
+	padding-left: 0;
+	padding-right: 25px;
+}
+#jsn-pos-top div.search input.button {
+	padding-right: 10px;
+	padding-left: 5px;
+	left: auto;
+	right: 1px;
+}

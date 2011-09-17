@@ -1,0 +1,23 @@
+fieldset input, fieldset textarea, fieldset select, fieldset img, fieldset button {
+	float:none;
+}
+
+label{
+  width: 90%;
+  display: block;
+  text-align: right;
+}
+
+.inputbox{
+  width: 50%;
+  text-align: left;
+}
+.inputbox2{
+  width: 70%;
+  text-align: left;
+}
+fieldset, table.adminheading{
+  width: 60%;
+  float: left;
+  clear: left;
+}
