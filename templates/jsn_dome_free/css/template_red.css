@@ -5,17 +5,17 @@
 */
 /* ============================== DEFAULT HTML ============================== */
 a {
-	color: #D24A17;
+	color: #306568;
 }
 /* ============================== LAYOUT ============================== */
 /* =============== LAYOUT - OVERALL PAGE =============== */
 #jsn-master {
 	background-color: #EBE8D9;
-	background-image: url(../images/colors/red/bg-master.jpg);
+	background-image: url(../images/colors/red/home.jpg);
 }
 /* =============== LAYOUT - CONTENT TOP AREA =============== */
 #jsn-content-top_inner {
-	background: #D24A17 url(../images/colors/red/bg-module-richbox-1.png) left bottom repeat-x;
+	background: #306568 url(../images/colors/red/bg-module-richbox-1.png) left bottom repeat-x;
 }
 #jsn-content-top_inner1 {
 	background: url(../images/colors/red/bg-promo.png) left top repeat-x;
@@ -28,10 +28,10 @@ a {
 /* =============== TYPOGRAPHY - LINK STYLES =============== */
 /* ----- ACTION LINK ----- */
 .link-action {
-	border-bottom: 1px solid #D24A17;
+	border-bottom: 1px solid #306568;
 }
 .link-action:hover {
-	background-color: #D24A17;
+	background-color: #306568;
 }
 /* =============== TYPOGRAPHY - TABLE STYLES =============== */
 .sectiontableheader {
@@ -43,7 +43,7 @@ ul.menu-topmenu li a {
 	background: url(../images/colors/red/bg-topmenu.png);
 }
 ul.menu-topmenu li a:hover {
-	color: #D24A17;
+	color: #306568;
 }
 /* =============== MENU - MAIN MENU =============== */
 /* ----- 1st LEVEL ----- */
@@ -78,29 +78,43 @@ body.jsn-mmtransparency #jsn-pos-mainmenu div.jsn-modulecontainer ul.menu-mainme
 /* ============================== MODULE STYLES ============================== */
 /* =============== MODULE STYLES - MODULE BOXES =============== */
 div.duohead-1 h3.jsn-moduletitle {
-	color: #D24A17;
+	color: #306568;
 }
 div.duohead-2 h3.jsn-moduletitle {
 	color: #A19675;
 }
+/* ----- LOGIN BOX 1 ----- */
+.jsn-modulecontainer {
+        padding: 5px;
+/*	background: #306568 url(../images/colors/red/bg-module-richbox-1.png) left bottom repeat-x;*/
+        background-color: white;
+}
+/* ----- LOGIN BOX 1 ----- */
+.jsn-modulecontainer_inner {
+        margin: 0px;
+        padding: 5px;
+        border: 1px solid black;
+        vertical-align: middle;
+
+}
 /* ----- RICH BOX 1 ----- */
 div.richbox-1 div.jsn-modulecontainer_inner {
-	background: #D24A17 url(../images/colors/red/bg-module-richbox-1.png) left bottom repeat-x;
+	background: #306568 url(../images/colors/red/bg-module-richbox-1.png) left bottom repeat-x;
 }
 #jsn-content-top div.richbox-1 div div {
-	background: #D24A17 url(../images/colors/red/bg-module-richbox-1.png) left bottom repeat-x;
+	background: #306568 url(../images/colors/red/bg-module-richbox-1.png) left bottom repeat-x;
 }
 /* ----- RICH BOX 2 ----- */
 div.richbox-2 div.jsn-modulecontainer_inner {
-	background: #9E9373 url(../images/colors/red/bg-module-richbox-2.png) left bottom repeat-x;
+	background: #6E6E6E url(../images/colors/red/bg-module-richbox-2.png) left bottom repeat-x;
 }
 #jsn-content-top div.richbox-2 div div {
-	background: #9E9373 url(../images/colors/red/bg-module-richbox-2.png) left bottom repeat-x;
+	background: #6E6E6E url(../images/colors/red/bg-module-richbox-2.png) left bottom repeat-x;
 }
 /* ============================== JOOMLA! DEFAULT EXTENSIONS ============================== */
 /* =============== JOOMLA! EXTENSIONS - MOD_BREADCRUMB =============== */
 span.pathway span.current {
-	color: #D24A17;
+	color: #306568;
 }
 /* =============== JOOMLA! EXTENSIONS - COM_CONTENT =============== */
 /* ----- READ MORE ----- */
@@ -110,5 +124,5 @@ a.readon {
 /* ----- SECTION / CATEGORY BLOG LAYOUT ----- */
 /* PAGE PAGINATION */
 ul.jsn-pagination li.navigation-page span {
-	background-color: #D24A17;
+	background-color: #306568;
 }

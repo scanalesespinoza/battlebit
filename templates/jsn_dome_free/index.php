@@ -81,7 +81,7 @@
 		}
 	?>
 		<div id="jsn-header">
-			<div id="jsn-logo">
+<!--			<div id="jsn-logo">
 			<?php
 				/*====== Show modules in position "logo" ======*/
 				if ($this->countModules('logo') > 0) {
@@ -107,7 +107,10 @@
 					}
 				}
 			?>
-			</div>
+
+                                --><div style="margin: 5px;width: 100%">&nbsp;</div><!--
+
+			</div>-->
 			<div id="jsn-headerright">
 			<?php
 				/*====== Show modules in position "top" ======*/
