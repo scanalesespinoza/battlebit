@@ -84,16 +84,21 @@ div.duohead-2 h3.jsn-moduletitle {
 	color: #A19675;
 }
 /* ----- LOGIN BOX 1 ----- */
+#login-div{
+    background-color: white;
+    background-image: none;
+}
+
 .jsn-modulecontainer {
         padding: 5px;
 /*	background: #306568 url(../images/colors/red/bg-module-richbox-1.png) left bottom repeat-x;*/
-        background-color: white;
+        background-color: inherit;
 }
-/* ----- LOGIN BOX 1 ----- */
+
 .jsn-modulecontainer_inner {
         margin: 0px;
         padding: 5px;
-        border: 1px solid black;
+/*        border: 1px solid black;*/
         vertical-align: middle;
 
 }

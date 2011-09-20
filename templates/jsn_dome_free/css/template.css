@@ -321,15 +321,18 @@ div.jsn-hasinnerright #jsn-maincontent_inner3 {
 }
 #jsn-leftside-middle.jsn-positionscontainer2 div#jsn-pos-left,
 #jsn-rightside-middle.jsn-positionscontainer2 div#jsn-pos-right-2 {
+    
     float: right;
     width: 49.95%;
 }
 div.jsn-positionscontainer2 #jsn-pos-left div.jsn-modulecontainer_inner,
 div.jsn-positionscontainer2 #jsn-pos-right-2 div.jsn-modulecontainer_inner {
+    
     margin-left: 5px;
 }
 div.jsn-positionscontainer2 #jsn-pos-left-2 div.jsn-modulecontainer_inner,
 div.jsn-positionscontainer2 #jsn-pos-right div.jsn-modulecontainer_inner {
+    
     margin-right: 5px;
 }
 #jsn-centercol_inner {
@@ -1609,4 +1612,9 @@ dl.article-count dd {
 .login-fields label {
     float: left;
     width: 9em;
+}
+
+#login-div{
+    background-color: white;
+    background-image: none;
 }
