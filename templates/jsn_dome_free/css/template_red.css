@@ -10,8 +10,10 @@ a {
 /* ============================== LAYOUT ============================== */
 /* =============== LAYOUT - OVERALL PAGE =============== */
 #jsn-master {
-	background-color: #EBE8D9;
-	background-image: url(../images/colors/red/home.jpg);
+	background-color: #000000;
+	background-image: url(../images/colors/red/bg-master.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
 }
 /* =============== LAYOUT - CONTENT TOP AREA =============== */
 #jsn-content-top_inner {
